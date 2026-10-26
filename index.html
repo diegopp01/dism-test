@@ -1,0 +1,3150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1120"><meta name="description" content="Test de DISM: practica 219 preguntas por tema, simulacros y repaso de fallos sin conexión.">
+  <meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="DISM Test">
+  <link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/icon-192.png"><link rel="icon" href="./icons/favicon.png" type="image/png">
+  <title>DISM Test · Prepara tu parcial</title>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--bg:#080e19;--layer:#0f1828;--layer2:#162237;--edge:#28364b;--ink:#eef5ff;--muted:#9aaaC0;--mint:#69edcf;--mint2:#2cbf9c;--blue:#88a8f8;--danger:#ff9b9b;--amber:#ffd18d;--shadow:0 25px 70px rgba(0,0,0,.22)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -5%,rgba(51,115,151,.21),transparent 34rem),radial-gradient(circle at -20% 15%,rgba(72,86,160,.15),transparent 24rem),var(--bg);color:var(--ink);min-height:100vh;padding-bottom:max(95px,env(safe-area-inset-bottom))}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--mint);outline-offset:3px}button:disabled{opacity:.4;cursor:not-allowed}a{color:var(--mint)}.page{max-width:1020px;padding:0 24px;margin:0 auto}.header{position:sticky;top:0;z-index:10;background:rgba(8,14,25,.92);border-bottom:1px solid rgba(161,184,210,.11);backdrop-filter:blur(18px)}.header .inner{max-width:1020px;min-height:70px;margin:auto;padding:10px 24px;display:flex;align-items:center;gap:12px}.logo{display:flex;align-items:center;gap:12px;border:0;background:none;color:inherit;padding:0}.mark{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;font-size:22px;font-weight:850;color:#082319;background:linear-gradient(135deg,#a8ffe6,#4aceb1);box-shadow:0 8px 28px #43ddbd25}.logotxt{font-weight:820;letter-spacing:-.9px;font-size:20px}.logotxt b{color:var(--mint)}.header-right{margin-left:auto;display:flex;align-items:center;gap:9px}.small-muted{font-size:12px;color:var(--muted)}.status-dot{display:inline-block;width:7px;height:7px;background:var(--mint);border-radius:100%;margin-right:7px}.button,.pillbtn{border:1px solid var(--edge);border-radius:14px;padding:12px 18px;background:var(--layer2);color:var(--ink);font-weight:700;transition:transform .12s,background .12s,border-color .12s;display:inline-flex;align-items:center;justify-content:center;gap:7px}.button:hover,.pillbtn:hover{background:#243751;border-color:#47627b}.button:active,.pillbtn:active{transform:scale(.98)}.button.primary{background:var(--mint);border-color:var(--mint);color:#09251c}.button.primary:hover{background:#9cf8e2}.button.ghost{background:transparent}.button.danger{color:var(--danger)}.button.tiny{padding:9px 12px;border-radius:11px;font-size:12px}.button.full{width:100%}.button.big{padding:15px 18px;font-size:15px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:var(--mint)}.hero{position:relative;margin-top:28px;border:1px solid #284358;border-radius:25px;padding:35px;overflow:hidden;background:linear-gradient(120deg,#172c37 0%,#142239 45%,#181e3b 100%);box-shadow:var(--shadow)}.hero::after{content:'✦';position:absolute;right:4%;top:-68px;font-size:290px;color:rgba(108,240,207,.055);pointer-events:none}.hero h1{max-width:680px;font-size:clamp(30px,5vw,48px);letter-spacing:-1.8px;line-height:1.1;margin:12px 0 14px}.hero p{max-width:600px;color:#b7cada;line-height:1.65;margin:0 0 22px}.hero .actions{display:flex;gap:10px;flex-wrap:wrap}.hero-meta{margin-top:23px;color:#a8baca;font-size:13px;display:flex;flex-wrap:wrap;gap:18px}.hero-meta strong{color:#e6fff7}.stat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.stat{background:var(--layer);border:1px solid var(--edge);border-radius:18px;padding:18px 20px}.stat .num{font-size:27px;letter-spacing:-1px;font-weight:840;margin:4px 0}.stat .text{color:var(--muted);font-size:12px}.section-head{margin:34px 0 16px;display:flex;align-items:end;justify-content:space-between;gap:12px}.section-head h2{margin:0;font-size:23px;letter-spacing:-.6px}.section-head p{font-size:13px;color:var(--muted);margin:5px 0 0}.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.topic{padding:21px;background:var(--layer);border:1px solid var(--edge);border-radius:20px;display:flex;flex-direction:column;gap:13px;min-height:201px}.topic-top{display:flex;align-items:center;justify-content:space-between}.subject-icon{display:grid;place-items:center;border-radius:13px;width:44px;height:44px;font-size:20px;background:#1f3648;color:#a3edeb;font-weight:800}.topic:nth-child(3n + 2) .subject-icon{background:#2c2b49;color:#c9b4ff}.topic:nth-child(3n + 3) .subject-icon{background:#413629;color:#ffddac}.count{font-size:12px;color:var(--muted);border:1px solid #334358;border-radius:99px;padding:5px 9px}.topic h3{font-size:19px;letter-spacing:-.4px;margin:0}.topic .desc{color:var(--muted);font-size:13px;line-height:1.5;margin:4px 0 0}.progress{height:6px;border-radius:10px;background:#273346;overflow:hidden}.progress .bar{height:100%;background:linear-gradient(90deg,#44cead,#8fffea);border-radius:10px}.topic-foot{display:flex;justify-content:space-between;gap:8px;align-items:center}.topic-actions{display:flex;flex-wrap:wrap;gap:6px}.topic-actions .button{padding:8px 11px;font-size:12px}.topic-meta{color:var(--muted);font-size:12px}.footnote{margin:34px 0;color:#94a6b8;font-size:12px;line-height:1.7;border-top:1px solid var(--edge);padding-top:18px}.quiz-shell{max-width:750px;margin:24px auto}.quiz-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:16px}.quiz-eyebrow{color:var(--mint);font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.quiz-title{font-weight:820;letter-spacing:-.4px;font-size:19px;margin-top:5px}.quiz-progress{display:flex;gap:4px;margin:20px 0}.quiz-progress i{background:#27354b;flex:1;height:6px;border-radius:9px}.quiz-progress i.done{background:var(--mint2)}.quiz-progress i.active{background:#b5d4ff}.q-card{background:var(--layer);border:1px solid var(--edge);padding:clamp(20px,4vw,34px);border-radius:22px}.question-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--muted);font-size:12px;margin-bottom:19px}.question-meta .type{background:#202d43;border:1px solid #36465f;padding:6px 9px;border-radius:999px}.q-card h1{font-size:clamp(21px,4.3vw,30px);line-height:1.35;letter-spacing:-.55px;margin:8px 0 25px;font-weight:780}.opt-list{display:grid;gap:11px}.opt{width:100%;text-align:left;background:#131f31;border:1.5px solid #304057;border-radius:15px;padding:14px 16px;display:flex;align-items:center;gap:13px;color:var(--ink);min-height:58px;font-size:14px;line-height:1.5}.opt:hover{background:#1c3042;border-color:#5a7a8d}.opt.selected{background:#173d3c;border-color:var(--mint);box-shadow:0 0 0 1px #55d5b958}.letter{width:32px;height:32px;min-width:32px;display:grid;place-items:center;border:1px solid #415470;color:#bbccdd;border-radius:10px;font-size:13px;font-weight:800}.opt.selected .letter{border-color:#7cefd5;color:#082b23;background:#86e9d3}.question-bottom{padding-top:22px;display:flex;align-items:center;justify-content:space-between;gap:10px}.quiz-controls{display:flex;gap:10px;align-items:center}.q-jump{margin-top:18px;display:flex;gap:7px;overflow-x:auto;padding:3px 1px 10px}.jump{flex:0 0 34px;width:34px;height:34px;border:1px solid #34465c;background:#131f31;color:#9db0c4;border-radius:10px;font-weight:700;font-size:11px}.jump.current{border-color:var(--mint);color:var(--mint)}.jump.answered{background:#225047;color:#d4fff5;border-color:#306e5d}.hint{font-size:12px;color:var(--muted);line-height:1.55}.callout{border:1px solid #395a6a;background:#142933;border-radius:16px;padding:16px 18px;font-size:13px;color:#b8d3dd;line-height:1.55}.results-hero{background:linear-gradient(110deg,#172f34,#18243a);border:1px solid #35504f;padding:28px;border-radius:22px;margin:26px 0 18px}.results-hero h1{font-size:30px;margin:9px 0 7px;letter-spacing:-1px}.score{font-size:clamp(58px,12vw,95px);line-height:1.1;font-weight:900;letter-spacing:-4px;color:var(--mint)}.score small{font-size:26px;color:#a4bfbe;letter-spacing:-1px}.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:20px 0}.resultmini{border:1px solid #375059;border-radius:13px;padding:13px}.resultmini strong{display:block;font-size:24px}.resultmini span{font-size:11px;color:#a9becb}.review-list{display:grid;gap:11px;margin-top:18px}.review{background:var(--layer);border:1px solid var(--edge);border-radius:17px;padding:19px}.review-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.review h3{font-size:16px;line-height:1.45;margin:14px 0 14px}.review p{font-size:13px;line-height:1.65;color:#c0ccde;margin:6px 0}.review .correctline{color:#9df5d7}.review .wrongline{color:#ffb0b0}.review .explanation{padding-top:11px;border-top:1px solid var(--edge);margin-top:12px;color:#b9cfe0}.tag{font-size:11px;font-weight:800;border:1px solid #4b6267;border-radius:999px;color:#9de8d2;padding:5px 10px}.tag.wrong{color:#ffc0c0;border-color:#714d5a}.tag.blank{color:#d8caac;border-color:#635c4d}.toolbar{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center;margin:24px 0 15px}.empty{border:1px dashed #41536a;padding:31px;text-align:center;color:var(--muted);border-radius:17px}.panel{background:var(--layer);border:1px solid var(--edge);border-radius:20px;padding:23px;margin:18px 0}.listrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid #27364a}.listrow:last-child{border:0}.listrow h3{font-size:15px;margin:0}.listrow p{color:var(--muted);font-size:12px;margin:5px 0 0}.right{margin-left:auto;text-align:right;font-weight:750}.footer-nav{position:fixed;z-index:12;bottom:0;left:0;right:0;background:rgba(10,17,29,.98);border-top:1px solid #293c51;padding:9px max(12px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom));display:flex;gap:6px;justify-content:center;backdrop-filter:blur(12px)}.nav-btn{min-width:100px;color:#93a8bd;border:0;border-radius:12px;background:transparent;padding:9px 10px;display:flex;flex-direction:column;gap:5px;align-items:center;font-size:11px;font-weight:650}.nav-btn svg{height:19px;width:19px;stroke:currentColor}.nav-btn.current{background:#193638;color:var(--mint)}.nav-btn:hover{color:white}.topline{display:flex;align-items:center;justify-content:space-between;gap:10px}.line{height:1px;background:var(--edge);margin:20px 0}.tinyicon{font-size:20px}.pill{display:inline-flex;align-items:center;font-size:11px;gap:7px;border:1px solid #36534f;border-radius:99px;padding:6px 10px;color:#a2eddb}.info-list{color:#b2c4d7;font-size:13px;line-height:1.75;padding-left:18px}.info-list li{margin:7px 0}.file-label{display:inline-flex;position:relative;overflow:hidden}.file-label input{position:absolute;left:-1000px;opacity:0}.hide{display:none!important}
+    @media(min-width:850px){.topic-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:42px}.topic{min-height:215px}}
+    @media(max-width:600px){.page{padding:0 15px}.header .inner{padding:11px 15px;min-height:63px}.hero{margin-top:17px;border-radius:20px;padding:24px 21px}.hero h1{font-size:32px}.stat{padding:13px}.stat .num{font-size:22px}.stat-grid{gap:7px}.topic-grid{grid-template-columns:1fr}.topic{min-height:0;padding:18px}.section-head h2{font-size:21px}.q-card{padding:21px 17px}.quiz-head{align-items:start}.quiz-title{font-size:16px}.q-card h1{font-size:21px}.opt{padding:13px}.button{padding:11px 13px}.question-bottom{align-items:stretch}.quiz-controls{width:100%;justify-content:space-between}.quiz-controls .button{flex:1}.footer-nav{justify-content:space-around}.nav-btn{min-width:82px}.results-hero{padding:21px}.results-grid{gap:6px}.resultmini{padding:10px}.toolbar{align-items:stretch}.toolbar .button{flex:1}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="header"><div class="inner"><button class="logo" data-action="home" aria-label="Ir al inicio"><span class="mark">D</span><span class="logotxt">DISM <b>Test</b></span></button><div class="header-right"><span class="small-muted" id="online-label"><span class="status-dot"></span>Disponible sin conexión*</span><button class="button tiny ghost hide" id="install-btn" data-action="install">Instalar</button></div></div></header>
+  <main class="page" id="app" aria-live="polite"></main>
+  <nav class="footer-nav" id="bottom-nav" aria-label="Navegación"><button class="nav-btn" data-action="home" data-nav="home" aria-label="Inicio"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-7h6v7"/></svg>Inicio</button><button class="nav-btn" data-action="mistakes" data-nav="mistakes" aria-label="Mis fallos"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="m9 12 2 2 4-5"/><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20"/></svg>Mis fallos</button><button class="nav-btn" data-action="progress" data-nav="progress" aria-label="Progreso"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20V9m8 11V4m8 16v-7"/></svg>Progreso</button><button class="nav-btn" data-action="info" data-nav="info" aria-label="Información"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v6m0-10v2"/></svg>Info</button></nav>
+  <script id="question-data" type="application/json">[
+  {
+    "id": "T1-001",
+    "topic": "T1",
+    "q": "Una aplicación nativa se caracteriza principalmente por...",
+    "options": [
+      "Desarrollarse específicamente para un sistema operativo y sus APIs",
+      "Ejecutarse siempre dentro de un navegador",
+      "Compartir obligatoriamente toda la interfaz web",
+      "No acceder nunca al hardware"
+    ],
+    "correct": 0,
+    "why": "El desarrollo nativo utiliza las herramientas y APIs de una plataforma concreta.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-002",
+    "topic": "T1",
+    "q": "¿Cuál es el principal atractivo de una aplicación híbrida basada en tecnologías web?",
+    "options": [
+      "Reutilizar HTML, CSS y JavaScript en diferentes plataformas",
+      "Garantizar rendimiento superior al nativo en cualquier caso",
+      "Eliminar toda dependencia de APIs del dispositivo",
+      "Evitar cualquier empaquetado móvil"
+    ],
+    "correct": 0,
+    "why": "Las apps híbridas web permiten reutilizar tecnologías y código web.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-003",
+    "topic": "T1",
+    "q": "¿Cuál de estas afirmaciones sobre el desarrollo multiplataforma es correcta?",
+    "options": [
+      "No implica necesariamente que la interfaz esté implementada en una WebView",
+      "Siempre significa escribir una PWA",
+      "Obliga a programar por separado todos los elementos",
+      "Solo es posible con aplicaciones de escritorio"
+    ],
+    "correct": 0,
+    "why": "Multiplataforma describe la posibilidad de compartir código entre varios sistemas, no una implementación concreta.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-004",
+    "topic": "T1",
+    "q": "Una PWA es fundamentalmente...",
+    "options": [
+      "Una aplicación web con capacidades que pueden acercarla a una app instalada",
+      "Un programa escrito exclusivamente en Swift",
+      "Una aplicación que solo puede distribuirse mediante Play Store",
+      "Un contenedor de vídeo en tiempo real"
+    ],
+    "correct": 0,
+    "why": "Las PWA son webs que pueden ofrecer instalación y ciertas capacidades offline cuando el entorno lo permite.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-005",
+    "topic": "T1",
+    "q": "Se necesita una app accesible mediante URL y que pueda añadirse a la pantalla de inicio. ¿Qué opción encaja mejor?",
+    "options": [
+      "PWA",
+      "Aplicación nativa exclusiva de iOS",
+      "DSP",
+      "RAID 1"
+    ],
+    "correct": 0,
+    "why": "Una PWA conserva distribución web y puede ofrecer instalación opcional.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-006",
+    "topic": "T1",
+    "q": "¿Qué tecnología se asocia especialmente con componentes de interfaz web para móviles?",
+    "options": [
+      "Ionic",
+      "Kotlin Multiplatform",
+      "RAID 5",
+      "RTP"
+    ],
+    "correct": 0,
+    "why": "Ionic usa tecnologías web para construir interfaces con apariencia móvil.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-007",
+    "topic": "T1",
+    "q": "¿Cuál es la función general de Capacitor?",
+    "options": [
+      "Permitir empaquetar una web como app y acceder a capacidades nativas",
+      "Codificar vídeo a H.265",
+      "Distribuir contenidos por multicast",
+      "Crear una base de datos RAID"
+    ],
+    "correct": 0,
+    "why": "Capacitor sirve de puente práctico entre el proyecto web y funciones de plataformas móviles.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-008",
+    "topic": "T1",
+    "q": "¿Qué tecnología está vinculada al ecosistema .NET y C#?",
+    "options": [
+      ".NET MAUI",
+      "React Native",
+      "Kotlin Multiplatform",
+      "Cordova"
+    ],
+    "correct": 0,
+    "why": ".NET MAUI es una propuesta multiplataforma de Microsoft.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-009",
+    "topic": "T1",
+    "q": "¿Qué es React Native?",
+    "options": [
+      "Un framework basado en React para desarrollar aplicaciones móviles",
+      "Un protocolo para transmitir vídeo en directo",
+      "Un lenguaje de descripción de APIs",
+      "Una codificación de caracteres"
+    ],
+    "correct": 0,
+    "why": "React Native utiliza el ecosistema React para desarrollar aplicaciones móviles.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-010",
+    "topic": "T1",
+    "q": "¿Cuál es la idea central de Kotlin Multiplatform?",
+    "options": [
+      "Compartir código Kotlin, especialmente lógica, entre varias plataformas",
+      "Obligar a usar HTML en todas las pantallas",
+      "Sustituir cualquier servidor con una CDN",
+      "Compilar todas las aplicaciones exclusivamente a JavaScript"
+    ],
+    "correct": 0,
+    "why": "KMP permite reutilizar lógica escrita en Kotlin entre plataformas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-011",
+    "topic": "T1",
+    "q": "¿Qué solución aparece en el temario como precedente de apps híbridas basadas en plugins?",
+    "options": [
+      "Apache Cordova",
+      "OpenAPI",
+      "MPEG-DASH",
+      "UTF-32"
+    ],
+    "correct": 0,
+    "why": "Cordova es una plataforma histórica de aplicaciones móviles híbridas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-012",
+    "topic": "T1",
+    "q": "Una empresa ya domina C# y herramientas Microsoft. ¿Qué alternativa encaja mejor con ese equipo?",
+    "options": [
+      ".NET MAUI",
+      "RTSP",
+      "LZW",
+      "HLS"
+    ],
+    "correct": 0,
+    "why": ".NET MAUI reutiliza habilidades y herramientas del entorno Microsoft.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-013",
+    "topic": "T1",
+    "q": "¿Cuál de las siguientes frases sobre las PWA es falsa?",
+    "options": [
+      "Para instalarse siempre necesitan publicarse en una tienda de apps",
+      "Pueden distribuirse a través de una URL",
+      "Dependen en parte de las capacidades del navegador",
+      "Pueden añadirse a la pantalla de inicio en entornos compatibles"
+    ],
+    "correct": 0,
+    "why": "Una PWA puede instalarse desde el navegador sin pasar por una tienda, cuando este lo permite.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-014",
+    "topic": "T1",
+    "q": "¿Qué diferencia conceptual hay entre nativa e híbrida web?",
+    "options": [
+      "La nativa usa APIs e interfaz específicas de plataforma; la híbrida reutiliza tecnología web",
+      "La híbrida siempre usa menos memoria que la nativa",
+      "La nativa no puede conectarse a Internet",
+      "No existe ninguna diferencia"
+    ],
+    "correct": 0,
+    "why": "No son sinónimos: difieren en el modo de desarrollar y presentar la interfaz.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-015",
+    "topic": "T1",
+    "q": "¿Cuál de estas frases es correcta respecto al rendimiento?",
+    "options": [
+      "Depende del caso, aunque el enfoque nativo suele ofrecer gran integración",
+      "Toda PWA siempre supera a una app nativa",
+      "Toda app híbrida es necesariamente más rápida",
+      "La tecnología elegida nunca afecta al rendimiento"
+    ],
+    "correct": 0,
+    "why": "La elección tecnológica implica compromisos de rendimiento, mantenimiento y acceso al dispositivo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-016",
+    "topic": "T1",
+    "q": "Si se exige acceso intensivo a funciones específicas de un sistema operativo, suele ser razonable priorizar...",
+    "options": [
+      "Desarrollo nativo",
+      "Solo una web estática",
+      "Un contenedor MP4",
+      "Una conexión multicast"
+    ],
+    "correct": 0,
+    "why": "El enfoque nativo facilita el uso de APIs muy específicas del sistema.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-017",
+    "topic": "T1",
+    "q": "¿Qué criterio NO debería ignorarse al elegir un framework móvil?",
+    "options": [
+      "El perfil del equipo, el presupuesto y los requisitos de hardware",
+      "Únicamente el color del logotipo",
+      "El número de letras del nombre del framework",
+      "La marca del ordenador del evaluador"
+    ],
+    "correct": 0,
+    "why": "La selección depende de requisitos, capacidades y mantenimiento.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-018",
+    "topic": "T1",
+    "q": "¿Una app multiplataforma debe tener siempre el mismo aspecto exacto en todos los sistemas?",
+    "options": [
+      "No; puede adaptar componentes e interfaz a cada plataforma",
+      "Sí; cualquier diferencia la convierte en nativa",
+      "Sí; es una obligación técnica de las PWA",
+      "Solo si usa RAID 10"
+    ],
+    "correct": 0,
+    "why": "Compartir código no impide adaptar la experiencia de usuario al sistema.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-019",
+    "topic": "T1",
+    "q": "¿Cuál es una ventaja habitual de compartir código entre Android e iOS?",
+    "options": [
+      "Reducir duplicación de desarrollo y mantenimiento",
+      "Eliminar las pruebas en ambas plataformas",
+      "Asegurar ausencia total de errores",
+      "Evitar la necesidad de diseño de interfaz"
+    ],
+    "correct": 0,
+    "why": "Se comparte parte del esfuerzo, pero siguen siendo necesarias pruebas específicas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-020",
+    "topic": "T1",
+    "q": "¿Qué opción describe mejor a Tauri en el temario?",
+    "options": [
+      "Framework para crear aplicaciones con interfaz web y contenedor nativo ligero",
+      "Protocolo de transmisión de audio",
+      "Sistema de distribución por satélite",
+      "Algoritmo de compresión de imagen"
+    ],
+    "correct": 0,
+    "why": "Tauri combina interfaz web y componentes nativos, con uso frecuente en escritorio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-021",
+    "topic": "T1",
+    "q": "¿En qué ecosistema aparece Uno Platform?",
+    "options": [
+      "En el ecosistema .NET multiplataforma",
+      "En la familia de protocolos RTP",
+      "En las tecnologías RAID",
+      "En los estándares de codificación UTF"
+    ],
+    "correct": 0,
+    "why": "Uno Platform es otra solución multiplataforma vinculada a .NET.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-022",
+    "topic": "T1",
+    "q": "¿Qué asociación es correcta entre Ionic y Capacitor?",
+    "options": [
+      "Ionic: interfaz web; Capacitor: integración con plataforma móvil",
+      "Capacitor: compresión sin pérdidas; Ionic: streaming",
+      "Ionic: gestor RAID; Capacitor: códec de audio",
+      "Ionic: antenas; Capacitor: handover"
+    ],
+    "correct": 0,
+    "why": "Ionic se ocupa del marco de UI web y Capacitor facilita el acceso a funciones y empaquetado.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-023",
+    "topic": "T1",
+    "q": "En una aplicación híbrida web, una WebView se utiliza para...",
+    "options": [
+      "Mostrar la interfaz basada en tecnologías web dentro de la aplicación",
+      "Calcular la paridad XOR entre discos",
+      "Controlar los handovers entre celdas",
+      "Sustituir la conexión a Internet por Bluetooth"
+    ],
+    "correct": 0,
+    "why": "Una WebView permite presentar contenido web dentro de una app.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-024",
+    "topic": "T1",
+    "q": "¿Qué propuesta está más asociada a reutilizar conocimientos de HTML, CSS y JavaScript?",
+    "options": [
+      "Ionic",
+      "Kotlin Multiplatform",
+      "OpenAPI",
+      "ASIC"
+    ],
+    "correct": 0,
+    "why": "Ionic aprovecha el entorno de desarrollo web.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-025",
+    "topic": "T1",
+    "q": "¿Cuál de estas afirmaciones sobre una PWA es correcta?",
+    "options": [
+      "Su funcionamiento offline puede ser parcial y depende de cómo esté desarrollada",
+      "Siempre funciona íntegramente sin Internet por definición",
+      "Tiene que estar escrita en Kotlin",
+      "No puede mostrar notificaciones en ningún entorno"
+    ],
+    "correct": 0,
+    "why": "Las capacidades offline no aparecen automáticamente por llamarse PWA.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-026",
+    "topic": "T1",
+    "q": "¿Por qué una PWA puede simplificar la distribución?",
+    "options": [
+      "Se publica como sitio web y el usuario puede acceder por enlace",
+      "Obliga a publicar dos binarios nativos",
+      "Exige un instalador por modelo de móvil",
+      "Solo funciona en una red local privada"
+    ],
+    "correct": 0,
+    "why": "La distribución por URL evita parte del proceso habitual de tiendas de apps.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-027",
+    "topic": "T1",
+    "q": "Si un proyecto quiere compartir lógica de negocio escrita en Kotlin, la respuesta más directa sería...",
+    "options": [
+      "Kotlin Multiplatform",
+      "Apache Cordova",
+      "HLS",
+      "Swift exclusivamente"
+    ],
+    "correct": 0,
+    "why": "KMP se centra especialmente en el código compartido Kotlin.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-028",
+    "topic": "T1",
+    "q": "¿Cuál de estas es una afirmación INCORRECTA?",
+    "options": [
+      "Multiplataforma y PWA significan exactamente lo mismo",
+      "Una PWA es una web progresiva",
+      "Una solución multiplataforma puede compartir lógica",
+      "La tecnología nativa suele integrarse con APIs del sistema"
+    ],
+    "correct": 0,
+    "why": "PWA es un tipo de aplicación web; multiplataforma es un enfoque de reutilización de código.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-029",
+    "topic": "T1",
+    "q": "En términos de mantenimiento, ¿qué riesgo tiene desarrollar dos apps nativas independientes?",
+    "options": [
+      "Tener que duplicar parte de los cambios en dos bases de código",
+      "No poder acceder a la cámara",
+      "No poder conectarse a Internet",
+      "Que ambas apps deban ser una PWA"
+    ],
+    "correct": 0,
+    "why": "Mantener implementaciones separadas requiere coordinar cambios y pruebas entre plataformas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T1-030",
+    "topic": "T1",
+    "q": "¿Cuál es la definición más adecuada de desarrollo móvil?",
+    "options": [
+      "Creación de software para dispositivos portátiles y sus capacidades",
+      "Diseño exclusivo de webs para ordenador",
+      "Producción de televisión por satélite",
+      "Asignación de frecuencias celulares"
+    ],
+    "correct": 0,
+    "why": "El desarrollo móvil abarca apps para dispositivos portátiles y su integración con hardware y sistema.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-001",
+    "topic": "T2A",
+    "q": "¿Cuál es una característica esencial de un sistema multimedia?",
+    "options": [
+      "Integra y procesa distintos medios como texto, audio, imagen y vídeo",
+      "Gestiona solamente datos numéricos sin presentación",
+      "Funciona obligatoriamente sin red",
+      "Solo admite imágenes estáticas"
+    ],
+    "correct": 0,
+    "why": "Los sistemas multimedia combinan medios y gestionan su almacenamiento, proceso, transmisión y presentación.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-002",
+    "topic": "T2A",
+    "q": "¿En qué consiste la multimedia lineal?",
+    "options": [
+      "En presentar el contenido siguiendo una secuencia prefijada",
+      "En navegar libremente por enlaces entre nodos",
+      "En grabar audio en múltiples canales",
+      "En comprimir vídeo sin pérdidas"
+    ],
+    "correct": 0,
+    "why": "En la presentación lineal, el orden de exposición está predeterminado.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-003",
+    "topic": "T2A",
+    "q": "La hipermedia se diferencia de una presentación lineal porque...",
+    "options": [
+      "Permite navegar por contenido multimedia mediante enlaces",
+      "Se limita a archivos de texto sin gráficos",
+      "Prohíbe cualquier interacción del usuario",
+      "Siempre necesita una red celular"
+    ],
+    "correct": 0,
+    "why": "La hipermedia conecta nodos multimedia para navegación no lineal.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-004",
+    "topic": "T2A",
+    "q": "¿Qué es la sincronización temporal en multimedia?",
+    "options": [
+      "Mantener coordinados en el tiempo audio, vídeo y otros elementos",
+      "Copiar ficheros entre dos discos idénticos",
+      "Igualar el tamaño de todas las imágenes",
+      "Elegir el lenguaje de la aplicación"
+    ],
+    "correct": 0,
+    "why": "La sincronización asegura que medios relacionados se presenten en el momento correcto.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-005",
+    "topic": "T2A",
+    "q": "¿Qué acción pertenece a la fase de especificación de requisitos de un proyecto multimedia?",
+    "options": [
+      "Determinar funciones, usuarios y prestaciones necesarias",
+      "Eliminar las pruebas finales",
+      "Dar por terminada la distribución",
+      "Sustituir la planificación por la publicidad"
+    ],
+    "correct": 0,
+    "why": "En requisitos se identifica qué debe hacer el sistema y con qué características.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-006",
+    "topic": "T2A",
+    "q": "Las pruebas de un proyecto multimedia sirven especialmente para...",
+    "options": [
+      "Comprobar funcionalidad, compatibilidad y experiencia antes de la entrega",
+      "Evitar definir requisitos",
+      "Garantizar que el software no necesite mantenimiento nunca",
+      "Eliminar todos los costes del proyecto"
+    ],
+    "correct": 0,
+    "why": "Las pruebas validan el resultado frente a requisitos y detectan problemas antes de entregar.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-007",
+    "topic": "T2A",
+    "q": "¿Qué ventaja ofrece el streaming frente a la descarga tradicional descrita en el tema?",
+    "options": [
+      "Permite empezar a reproducir antes de recibir todo el fichero",
+      "Evita por completo utilizar búfer",
+      "Exige recibir todo el archivo antes del primer fotograma",
+      "Funciona exclusivamente con multicast"
+    ],
+    "correct": 0,
+    "why": "En streaming la reproducción puede comenzar mientras se siguen recibiendo datos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-008",
+    "topic": "T2A",
+    "q": "¿Para qué sirve el búfer de reproducción?",
+    "options": [
+      "Acumular temporalmente datos para amortiguar variaciones de llegada",
+      "Codificar el contenido en UTF-32",
+      "Reemplazar el servidor de origen",
+      "Asignar frecuencias a las BTS"
+    ],
+    "correct": 0,
+    "why": "El búfer reduce cortes cuando la red entrega datos de forma irregular.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-009",
+    "topic": "T2A",
+    "q": "¿Qué significa jitter en una transmisión multimedia?",
+    "options": [
+      "Variación en el retardo de llegada de los paquetes",
+      "Número total de píxeles de una pantalla",
+      "Pérdida de la contraseña de usuario",
+      "Duplicación de discos"
+    ],
+    "correct": 0,
+    "why": "Jitter es variabilidad del retardo, no retardo absoluto.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-010",
+    "topic": "T2A",
+    "q": "Un búfer de reproducción más grande suele...",
+    "options": [
+      "Reducir riesgo de cortes a costa de aumentar la espera inicial",
+      "Disminuir siempre la latencia a cero",
+      "Eliminar el ancho de banda necesario",
+      "Impedir la adaptación de bitrate"
+    ],
+    "correct": 0,
+    "why": "Acumular más datos suaviza fluctuaciones, pero puede aumentar la demora.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-011",
+    "topic": "T2A",
+    "q": "¿Qué sucede si el búfer se vacía durante la reproducción?",
+    "options": [
+      "Puede haber una interrupción o rebuffering",
+      "El archivo se transforma en un RAID 0",
+      "La red cambia automáticamente a NFC",
+      "La calidad se vuelve siempre sin pérdida"
+    ],
+    "correct": 0,
+    "why": "La reproducción necesita datos; sin ellos aparecen pausas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-012",
+    "topic": "T2A",
+    "q": "La adaptación de bitrate (ABR) permite...",
+    "options": [
+      "Cambiar la calidad según la red y el estado del búfer",
+      "Eliminar la compresión de todos los vídeos",
+      "Duplicar la frecuencia del procesador",
+      "Convertir una emisión unicast en RFID"
+    ],
+    "correct": 0,
+    "why": "ABR selecciona representaciones de diferente bitrate para adaptarse a la conexión.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-013",
+    "topic": "T2A",
+    "q": "¿Cuál es la diferencia principal entre directo y vídeo bajo demanda?",
+    "options": [
+      "En VOD el usuario elige contenido y momento; en directo hay emisión común",
+      "En VOD todos ven siempre el mismo segundo de vídeo",
+      "El directo no requiere red",
+      "El directo nunca utiliza servidores"
+    ],
+    "correct": 0,
+    "why": "VOD da control temporal individual; el directo sigue una emisión simultánea.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-014",
+    "topic": "T2A",
+    "q": "¿Qué caracteriza al tráfico unicast?",
+    "options": [
+      "Cada receptor recibe su propio flujo o conexión lógica",
+      "Una sola entrega de red a un grupo multicast",
+      "Todos los clientes comparten el mismo cable sin retransmisiones",
+      "No existen direcciones de destino"
+    ],
+    "correct": 0,
+    "why": "Unicast es comunicación individual entre emisor y receptor.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-015",
+    "topic": "T2A",
+    "q": "¿Cuál es la característica definitoria de multicast?",
+    "options": [
+      "Distribución de datos a un grupo de receptores a nivel de red",
+      "Una conexión separada por cada destinatario",
+      "Obligación de usar satélites",
+      "Compresión de los datos sin pérdida"
+    ],
+    "correct": 0,
+    "why": "Multicast es envío a un grupo con un mecanismo de distribución específico.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-016",
+    "topic": "T2A",
+    "q": "En un modelo AVOD, el contenido suele financiarse mediante...",
+    "options": [
+      "Publicidad",
+      "Una cuota obligatoria por cada título",
+      "Una suscripción necesariamente sin anuncios",
+      "Venta de discos duros"
+    ],
+    "correct": 0,
+    "why": "AVOD = Advertising Video On Demand.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-017",
+    "topic": "T2A",
+    "q": "En un modelo SVOD, lo característico es...",
+    "options": [
+      "Acceso mediante una suscripción",
+      "Pagar cada alquiler individualmente sin suscripción",
+      "Publicidad como único requisito definitorio",
+      "Recepción mediante RFID"
+    ],
+    "correct": 0,
+    "why": "SVOD = Subscription Video On Demand.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-018",
+    "topic": "T2A",
+    "q": "¿Qué describe correctamente TVOD?",
+    "options": [
+      "Pago por una transacción concreta, como alquiler o compra de un título",
+      "Solo contenido financiado con anuncios",
+      "Suscripción mensual como única modalidad",
+      "Streaming sin servidor"
+    ],
+    "correct": 0,
+    "why": "TVOD = Transactional Video On Demand.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-019",
+    "topic": "T2A",
+    "q": "¿Qué significa OTT en distribución audiovisual?",
+    "options": [
+      "Entrega de contenido por Internet mediante servicios o aplicaciones",
+      "Una modalidad que exige siempre anuncios",
+      "Un algoritmo de paridad",
+      "Una tecnología de pantalla táctil"
+    ],
+    "correct": 0,
+    "why": "OTT indica un modo de distribución, no un único modelo de monetización.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-020",
+    "topic": "T2A",
+    "q": "¿Cuál de las siguientes asociaciones es correcta?",
+    "options": [
+      "AVOD: anuncios; SVOD: suscripción; TVOD: pago por título",
+      "AVOD: suscripción; SVOD: pago por título; TVOD: anuncios",
+      "AVOD: pago por título; SVOD: anuncios; TVOD: suscripción",
+      "AVOD: RAID; SVOD: LTE; TVOD: NFC"
+    ],
+    "correct": 0,
+    "why": "Las siglas A, S y T remiten a advertising, subscription y transactional.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-021",
+    "topic": "T2A",
+    "q": "¿Cuál es la función de RTP?",
+    "options": [
+      "Transportar datos de audio y vídeo en tiempo real",
+      "Emitir órdenes PLAY y PAUSE",
+      "Describir endpoints de una API",
+      "Dividir un disco en espejos"
+    ],
+    "correct": 0,
+    "why": "RTP transporta flujos multimedia y usa números de secuencia y marcas de tiempo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-022",
+    "topic": "T2A",
+    "q": "¿Cuál es la función principal de RTCP?",
+    "options": [
+      "Enviar información de control y calidad de una sesión RTP",
+      "Transportar por sí solo el vídeo principal",
+      "Describir un fichero PNG",
+      "Crear clusters celulares"
+    ],
+    "correct": 0,
+    "why": "RTCP acompaña a RTP con métricas de pérdidas y jitter.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-023",
+    "topic": "T2A",
+    "q": "¿Qué protocolo se asocia con órdenes como SETUP, PLAY, PAUSE y TEARDOWN?",
+    "options": [
+      "RTSP",
+      "RTCP",
+      "UTF-16",
+      "RAID 6"
+    ],
+    "correct": 0,
+    "why": "RTSP permite controlar sesiones de streaming.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-024",
+    "topic": "T2A",
+    "q": "¿Qué diferencia es correcta entre RTP y RTSP?",
+    "options": [
+      "RTP transporta el medio; RTSP controla la sesión",
+      "RTP reproduce archivos locales; RTSP gestiona paridad",
+      "RTP comprime JPEG; RTSP comprime PNG",
+      "Son dos nombres para el mismo protocolo"
+    ],
+    "correct": 0,
+    "why": "Transporte y control de sesión son funciones distintas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-025",
+    "topic": "T2A",
+    "q": "¿Qué formato de manifiesto utiliza habitualmente HLS?",
+    "options": [
+      "M3U8",
+      "MPD",
+      "DOCX",
+      "BMP"
+    ],
+    "correct": 0,
+    "why": "HLS usa listas de reproducción M3U8 para organizar segmentos y representaciones.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-026",
+    "topic": "T2A",
+    "q": "¿Qué formato de manifiesto usa MPEG-DASH?",
+    "options": [
+      "MPD",
+      "M3U8 exclusivamente",
+      "TXT con cabeceras IPv4",
+      "ISO9660"
+    ],
+    "correct": 0,
+    "why": "MPEG-DASH describe sus representaciones mediante MPD.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-027",
+    "topic": "T2A",
+    "q": "¿Cuál de las siguientes tecnologías es un formato de streaming adaptativo sobre HTTP?",
+    "options": [
+      "MPEG-DASH",
+      "RAID 1",
+      "ASCII",
+      "NFC"
+    ],
+    "correct": 0,
+    "why": "DASH usa segmentos entregados sobre HTTP con adaptación de calidad.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-028",
+    "topic": "T2A",
+    "q": "¿Con qué protocolo se asocia históricamente la ingesta de directos y el entorno Flash?",
+    "options": [
+      "RTMP",
+      "RTCP",
+      "OpenAPI",
+      "UTF-8"
+    ],
+    "correct": 0,
+    "why": "RTMP se ha utilizado ampliamente para enviar directos hacia servicios de streaming.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-029",
+    "topic": "T2A",
+    "q": "¿Qué es HDS en el contexto de streaming?",
+    "options": [
+      "Tecnología de streaming HTTP heredada de Adobe",
+      "Un tipo de memoria RAM",
+      "Una técnica de handover de GSM",
+      "Un algoritmo de paridad RAID"
+    ],
+    "correct": 0,
+    "why": "HDS fue una solución adaptativa ligada a Adobe.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-030",
+    "topic": "T2A",
+    "q": "¿Qué aporta una CDN?",
+    "options": [
+      "Servidores distribuidos que acercan contenido al usuario",
+      "Elimina la necesidad de cualquier servidor",
+      "Convierte vídeo comprimido en vídeo bruto",
+      "Reemplaza obligatoriamente toda conexión HTTP"
+    ],
+    "correct": 0,
+    "why": "Una CDN reduce distancia lógica, carga del origen y congestión.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-031",
+    "topic": "T2A",
+    "q": "¿Cuál es la función de una caché o proxy en distribución multimedia?",
+    "options": [
+      "Guardar temporalmente contenidos solicitados para servirlos más cerca",
+      "Hacer que todo el vídeo sea sin pérdida",
+      "Decidir la frecuencia de las antenas móviles",
+      "Crear las pistas de audio originales"
+    ],
+    "correct": 0,
+    "why": "Cachés y proxies ayudan a evitar repetir todas las peticiones al origen.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-032",
+    "topic": "T2A",
+    "q": "En el ejemplo de Netflix, el backend en AWS se ocupa principalmente de...",
+    "options": [
+      "Autenticación, catálogo, recomendaciones y lógica del servicio",
+      "Servir todos los segmentos de vídeo desde un único ordenador central",
+      "Mover discos RAID entre domicilios",
+      "Decodificar la pantalla de cada cliente"
+    ],
+    "correct": 0,
+    "why": "El backend es el plano de control y negocio, no el único plano de entrega de bytes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-033",
+    "topic": "T2A",
+    "q": "En Open Connect de Netflix, los servidores OCA se emplean sobre todo para...",
+    "options": [
+      "Entregar segmentos de vídeo a los usuarios",
+      "Validar la identidad del profesor",
+      "Calcular fórmulas de Erlang B",
+      "Definir el contrato OpenAPI"
+    ],
+    "correct": 0,
+    "why": "Los OCA son equipos de distribución de contenido cercanos al cliente.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-034",
+    "topic": "T2A",
+    "q": "¿Qué pareja de funciones de Netflix es correcta?",
+    "options": [
+      "Backend: control y catálogo; OCA: entrega de vídeo",
+      "Backend: únicamente radio; OCA: codificación Unicode",
+      "Backend: antena BTS; OCA: MSC",
+      "Backend: paridad RAID; OCA: compresión LZW"
+    ],
+    "correct": 0,
+    "why": "Netflix separa el plano de control de la distribución efectiva de contenido.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-035",
+    "topic": "T2A",
+    "q": "¿Qué es un peer en un sistema P2P?",
+    "options": [
+      "Un participante que puede descargar y compartir fragmentos",
+      "Un disco usado solo para espejo",
+      "Un tipo especial de píxel",
+      "Una estación BTS"
+    ],
+    "correct": 0,
+    "why": "En P2P un cliente puede actuar también como proveedor de contenido.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-036",
+    "topic": "T2A",
+    "q": "¿Qué es un chunk en distribución P2P?",
+    "options": [
+      "Un fragmento del contenido que los peers intercambian",
+      "Una instrucción RISC",
+      "Un nivel de RAID",
+      "Una técnica de pantalla OLED"
+    ],
+    "correct": 0,
+    "why": "El contenido suele dividirse en piezas o chunks.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-037",
+    "topic": "T2A",
+    "q": "¿Qué es un seed en un esquema P2P?",
+    "options": [
+      "Una fuente que posee el contenido y puede compartirlo",
+      "Un protocolo para controlar PLAY",
+      "Una etiqueta RFID",
+      "Un formato de imagen sin pérdida"
+    ],
+    "correct": 0,
+    "why": "El seed es una fuente inicial o completa de bloques que otros pueden obtener.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-038",
+    "topic": "T2A",
+    "q": "En P2P, un tracker se relaciona con...",
+    "options": [
+      "La señalización o localización de participantes",
+      "La cuantificación de audio PCM",
+      "El cálculo de canales de una celda",
+      "La generación de un QR de OpenAPI"
+    ],
+    "correct": 0,
+    "why": "Un tracker puede ayudar a peers a descubrir otros participantes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-039",
+    "topic": "T2A",
+    "q": "¿Qué requisito destaca al ofrecer una videollamada frente a una descarga diferida?",
+    "options": [
+      "Latencia reducida para permitir conversación fluida",
+      "Esperar siempre a descargar el archivo completo",
+      "Aceptar un retardo indefinido sin efecto",
+      "Usar necesariamente TVOD"
+    ],
+    "correct": 0,
+    "why": "Las comunicaciones interactivas son sensibles al retardo extremo a extremo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-040",
+    "topic": "T2A",
+    "q": "Si el retardo medio no cambia pero fluctúa mucho de paquete a paquete, empeora principalmente...",
+    "options": [
+      "El jitter",
+      "La resolución espacial",
+      "El número de colores de GIF",
+      "La tolerancia de RAID 5"
+    ],
+    "correct": 0,
+    "why": "Jitter es la variabilidad del retardo de los paquetes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-041",
+    "topic": "T2A",
+    "q": "¿Qué mide el bitrate de un flujo de streaming?",
+    "options": [
+      "La cantidad de bits transmitidos por unidad de tiempo",
+      "Los fotogramas almacenados por byte",
+      "Los discos conectados al servidor",
+      "Los dispositivos emparejados por NFC"
+    ],
+    "correct": 0,
+    "why": "El bitrate suele expresarse en bits/s, kb/s o Mb/s.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-042",
+    "topic": "T2A",
+    "q": "Una conexión soporta de forma estable menos bitrate del que necesita el vídeo. ¿Qué medida ayuda a evitar cortes?",
+    "options": [
+      "Seleccionar una representación de menor bitrate",
+      "Eliminar por completo el búfer",
+      "Aumentar obligatoriamente los fps",
+      "Convertir unicast en RAID 1"
+    ],
+    "correct": 0,
+    "why": "Reducir el bitrate acerca las necesidades del contenido a la capacidad disponible.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-043",
+    "topic": "T2A",
+    "q": "¿Qué diferencia principal hay entre servidor VOD y servidor de directo?",
+    "options": [
+      "El VOD sirve contenido almacenado bajo petición; el directo sigue una señal de emisión",
+      "El VOD no necesita clientes",
+      "El directo solo admite JPEG",
+      "El VOD obliga a utilizar Bluetooth"
+    ],
+    "correct": 0,
+    "why": "El origen del contenido y el control de la reproducción son distintos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-044",
+    "topic": "T2A",
+    "q": "¿Qué secuencia se aproxima a la distribución normal de streaming?",
+    "options": [
+      "Codificación, origen/CDN, cliente, búfer y decodificación",
+      "NFC, RAID, clúster, disco y antena",
+      "Pantalla, impresora, teclado y MCU",
+      "UTF-8, USB, BIOS y DNS únicamente"
+    ],
+    "correct": 0,
+    "why": "La cadena codifica, distribuye y finalmente reproduce mediante un cliente.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2A-045",
+    "topic": "T2A",
+    "q": "Si cada cliente recibe su propia conexión HTTP para ver el mismo directo, ¿qué puede afirmarse?",
+    "options": [
+      "Sigue siendo distribución unicast para esos clientes",
+      "Pasa necesariamente a multicast de red",
+      "Deja de ser streaming en directo",
+      "La reproducción ya no necesita red"
+    ],
+    "correct": 0,
+    "why": "Un evento en directo no implica uso de multicast; HTTP suele ser unicast.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-001",
+    "topic": "T2B",
+    "q": "¿Qué significa utilizar RAID en almacenamiento multimedia?",
+    "options": [
+      "Combinar varios discos con una organización de datos específica",
+      "Guardar cada archivo en Internet obligatoriamente",
+      "Comprimir JPEG con codificación Unicode",
+      "Eliminar la necesidad de copias de seguridad"
+    ],
+    "correct": 0,
+    "why": "RAID organiza varios discos para rendimiento o tolerancia a fallos según su nivel.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-002",
+    "topic": "T2B",
+    "q": "¿Qué define a RAID 0?",
+    "options": [
+      "Distribución en franjas sin redundancia",
+      "Duplicación completa de todos los discos",
+      "Paridad doble distribuida",
+      "Un único disco con copia externa"
+    ],
+    "correct": 0,
+    "why": "RAID 0 usa striping y no tolera fallos de disco.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-003",
+    "topic": "T2B",
+    "q": "¿Qué define a RAID 1 clásico de dos discos?",
+    "options": [
+      "Dos copias de los datos en espejo",
+      "Datos sin redundancia entre dos discos",
+      "Doble paridad y mínimo cuatro discos",
+      "Codificación Huffman de bloques"
+    ],
+    "correct": 0,
+    "why": "RAID 1 usa mirroring o espejo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-004",
+    "topic": "T2B",
+    "q": "¿Qué característica corresponde a RAID 5?",
+    "options": [
+      "Paridad distribuida que permite tolerar el fallo de un disco",
+      "Duplicación completa obligatoria de cada disco",
+      "Ausencia total de paridad y espejo",
+      "Tolerancia garantizada a cualquier número de fallos"
+    ],
+    "correct": 0,
+    "why": "RAID 5 reparte datos y paridad y soporta el fallo de un disco.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-005",
+    "topic": "T2B",
+    "q": "¿Qué característica corresponde a RAID 6?",
+    "options": [
+      "Doble paridad distribuida y tolerancia a dos fallos de disco",
+      "Ausencia de redundancia",
+      "Exige exactamente dos discos",
+      "Es equivalente a RAID 0"
+    ],
+    "correct": 0,
+    "why": "RAID 6 almacena dos bloques de redundancia por franja.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-006",
+    "topic": "T2B",
+    "q": "RAID 10 combina...",
+    "options": [
+      "Espejos de discos y distribución de datos por franjas",
+      "Únicamente paridad simple",
+      "Solo compresión de datos",
+      "Un disco de datos y ningún espejo"
+    ],
+    "correct": 0,
+    "why": "RAID 10 combina RAID 1 y RAID 0.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-007",
+    "topic": "T2B",
+    "q": "¿Cuál es el mínimo habitual de discos para RAID 5?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "8"
+    ],
+    "correct": 0,
+    "why": "Para datos y paridad distribuida, RAID 5 requiere al menos tres discos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-008",
+    "topic": "T2B",
+    "q": "¿Cuál es el mínimo de discos indicado para RAID 6?",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ],
+    "correct": 0,
+    "why": "RAID 6 requiere al menos cuatro discos para doble paridad.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-009",
+    "topic": "T2B",
+    "q": "¿Cuál es el mínimo habitual de discos para RAID 10?",
+    "options": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": 0,
+    "why": "RAID 10 necesita al menos dos parejas en espejo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-010",
+    "topic": "T2B",
+    "q": "Con 4 discos de 2 TB cada uno en RAID 5, la capacidad útil teórica es...",
+    "options": [
+      "6 TB",
+      "8 TB",
+      "4 TB",
+      "2 TB"
+    ],
+    "correct": 0,
+    "why": "RAID 5: (n − 1) × S = (4 − 1) × 2 = 6 TB.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-011",
+    "topic": "T2B",
+    "q": "Con 5 discos de 1 TB cada uno en RAID 6, ¿cuál es la capacidad útil teórica?",
+    "options": [
+      "3 TB",
+      "5 TB",
+      "4 TB",
+      "2 TB"
+    ],
+    "correct": 0,
+    "why": "RAID 6: (n − 2) × S = (5 − 2) × 1 = 3 TB.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-012",
+    "topic": "T2B",
+    "q": "Cuatro discos de 2 TB configurados como RAID 10 ofrecen normalmente...",
+    "options": [
+      "4 TB útiles",
+      "8 TB útiles",
+      "6 TB útiles",
+      "2 TB útiles"
+    ],
+    "correct": 0,
+    "why": "RAID 10: (n/2) × S = (4/2) × 2 = 4 TB.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-013",
+    "topic": "T2B",
+    "q": "Si XOR se aplica bit a bit a 1010 y 1100, el resultado es...",
+    "options": [
+      "0110",
+      "1110",
+      "1010",
+      "0010"
+    ],
+    "correct": 0,
+    "why": "XOR es 1 cuando los bits comparados son distintos: 1010 ⊕ 1100 = 0110.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-014",
+    "topic": "T2B",
+    "q": "En RAID 5, ¿qué ventaja tiene distribuir la paridad?",
+    "options": [
+      "Evitar concentrar todas las operaciones de paridad en un único disco",
+      "Eliminar la lectura de datos",
+      "Tolerar tres fallos cualesquiera",
+      "Convertirlo automáticamente en RAID 1"
+    ],
+    "correct": 0,
+    "why": "La paridad distribuida evita un disco exclusivo de paridad como cuello de botella.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-015",
+    "topic": "T2B",
+    "q": "Tras fallar un disco de RAID 5, sus datos pueden reconstruirse a partir de...",
+    "options": [
+      "Los datos y la paridad conservados en los demás discos",
+      "Únicamente el nombre del fichero",
+      "La dirección IP del cliente",
+      "Una copia inexistente del mismo disco"
+    ],
+    "correct": 0,
+    "why": "La paridad XOR permite reconstruir un bloque que falta si solo falla un disco.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-016",
+    "topic": "T2B",
+    "q": "¿Por qué RAID no sustituye a una copia de seguridad?",
+    "options": [
+      "No protege por sí solo ante borrados accidentales, ransomware u otros desastres",
+      "RAID nunca permite recuperar un disco averiado",
+      "La copia de seguridad solo funciona con CD",
+      "RAID impide usar discos SSD"
+    ],
+    "correct": 0,
+    "why": "La redundancia no equivale a una copia independiente, recuperable y aislada.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-017",
+    "topic": "T2B",
+    "q": "Una escritura pequeña en RAID 5 puede implicar...",
+    "options": [
+      "Leer datos y paridad anteriores, modificarlos y reescribir",
+      "Añadir siempre otro disco físico",
+      "Eliminar todos los bloques de paridad",
+      "Cambiar la codificación UTF"
+    ],
+    "correct": 0,
+    "why": "La escritura parcial suele tener penalización por lectura-modificación-escritura.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-018",
+    "topic": "T2B",
+    "q": "¿Qué describe correctamente ASCII original?",
+    "options": [
+      "Codificación de 7 bits con 128 valores",
+      "Codificación fija de 32 bits por carácter",
+      "Compresión con pérdida de imágenes",
+      "Conjunto de todos los emojis modernos"
+    ],
+    "correct": 0,
+    "why": "ASCII original utiliza 7 bits, por tanto 128 combinaciones.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-019",
+    "topic": "T2B",
+    "q": "¿Qué diferencia hay entre Unicode y UTF-8?",
+    "options": [
+      "Unicode define caracteres; UTF-8 es una forma de codificarlos",
+      "Unicode es un códec de vídeo; UTF-8 es un contenedor",
+      "Ambos son niveles RAID",
+      "UTF-8 solo permite el alfabeto inglés"
+    ],
+    "correct": 0,
+    "why": "Unicode es el repertorio; UTF-8 es una codificación de ese repertorio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-020",
+    "topic": "T2B",
+    "q": "Un carácter Unicode representado en UTF-8 puede ocupar normalmente...",
+    "options": [
+      "De 1 a 4 bytes",
+      "Exactamente 4 bytes siempre",
+      "Exactamente 2 bytes siempre",
+      "Únicamente 1 bit"
+    ],
+    "correct": 0,
+    "why": "UTF-8 usa longitud variable de 1 a 4 bytes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-021",
+    "topic": "T2B",
+    "q": "¿Cuál es una afirmación correcta sobre UTF-16?",
+    "options": [
+      "Usa unidades de 16 bits y algunos caracteres requieren dos unidades",
+      "Todos los caracteres caben siempre en un byte",
+      "Solo codifica letras ASCII",
+      "Es un formato de audio"
+    ],
+    "correct": 0,
+    "why": "UTF-16 usa una o dos unidades de 16 bits según el carácter.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-022",
+    "topic": "T2B",
+    "q": "¿Cómo se caracteriza UTF-32?",
+    "options": [
+      "Usa 4 bytes por punto de código Unicode",
+      "Usa 7 bits para todos los caracteres",
+      "Es un protocolo de transferencia",
+      "Emplea longitud variable de 1 a 8 bits"
+    ],
+    "correct": 0,
+    "why": "UTF-32 usa 32 bits por punto de código, con mayor consumo de espacio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-023",
+    "topic": "T2B",
+    "q": "¿Qué implica una compresión sin pérdida?",
+    "options": [
+      "Que el contenido original se puede reconstruir exactamente",
+      "Que siempre se reduce más que con pérdida",
+      "Que se pierden los colores menos importantes",
+      "Que un archivo JPG se convierte siempre en BMP"
+    ],
+    "correct": 0,
+    "why": "La compresión lossless conserva toda la información necesaria para reconstruir los datos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-024",
+    "topic": "T2B",
+    "q": "¿Qué implica la compresión con pérdida?",
+    "options": [
+      "Que se descarta o aproxima información y no se recupera exactamente el original",
+      "Que nunca aparecen artefactos visuales",
+      "Que se conserva cada bit original",
+      "Que es obligatoria en texto Unicode"
+    ],
+    "correct": 0,
+    "why": "La compresión lossy sacrifica información para reducir tamaño.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-025",
+    "topic": "T2B",
+    "q": "¿Cuál de estos formatos suele emplear compresión con pérdida en fotografía?",
+    "options": [
+      "JPEG",
+      "PNG",
+      "BMP sin comprimir",
+      "UTF-8"
+    ],
+    "correct": 0,
+    "why": "JPEG usa habitualmente un esquema de compresión con pérdida.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-026",
+    "topic": "T2B",
+    "q": "¿Qué formato de imagen es típicamente sin pérdida y admite canal alfa?",
+    "options": [
+      "PNG",
+      "JPEG básico",
+      "ASCII",
+      "MP3"
+    ],
+    "correct": 0,
+    "why": "PNG usa compresión sin pérdida y admite transparencia alfa.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-027",
+    "topic": "T2B",
+    "q": "¿Qué característica clásica tiene GIF?",
+    "options": [
+      "Paleta de hasta 256 colores por fotograma y posibilidad de animación",
+      "Profundidad ilimitada de 32 bits por componente",
+      "Vídeo H.265 de alta definición obligatorio",
+      "Compresión de audio sin pérdida"
+    ],
+    "correct": 0,
+    "why": "GIF trabaja con una paleta de 256 colores por fotograma y permite animación.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-028",
+    "topic": "T2B",
+    "q": "¿Cuál de estas afirmaciones sobre WebP es correcta?",
+    "options": [
+      "Puede utilizar compresión con pérdida o sin pérdida",
+      "Solo admite escala de grises sin compresión",
+      "Es una codificación de caracteres",
+      "Está diseñado para multiplexar pistas de sonido en MP4"
+    ],
+    "correct": 0,
+    "why": "WebP permite diferentes modos de compresión y otras funciones de imagen.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-029",
+    "topic": "T2B",
+    "q": "HEIC/HEIF está especialmente vinculado a...",
+    "options": [
+      "Contenedores modernos de imagen de alta eficiencia, usados en móviles",
+      "Un protocolo de control RTP",
+      "Una topología RAID por espejos",
+      "Un tipo de pantalla resistiva"
+    ],
+    "correct": 0,
+    "why": "HEIF/HEIC busca eficiencia para almacenar imágenes y es común en fotografía móvil.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-030",
+    "topic": "T2B",
+    "q": "¿Qué ventaja tiene una imagen vectorial frente a una imagen de mapa de bits?",
+    "options": [
+      "Escala sin perder precisión geométrica en sus formas",
+      "Se construye necesariamente con una cuadrícula fija de píxeles",
+      "No puede incluir líneas ni curvas",
+      "Siempre necesita más espacio que una fotografía"
+    ],
+    "correct": 0,
+    "why": "Los vectores describen formas geométricas y se redibujan a distintas resoluciones.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-031",
+    "topic": "T2B",
+    "q": "¿Qué algoritmo utiliza códigos variables más cortos para símbolos frecuentes?",
+    "options": [
+      "Huffman",
+      "RAID 6",
+      "RTP",
+      "NCHO"
+    ],
+    "correct": 0,
+    "why": "Huffman asigna códigos cortos a símbolos frecuentes para compresión sin pérdida.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-032",
+    "topic": "T2B",
+    "q": "¿Qué algoritmo de compresión se basa en un diccionario de secuencias?",
+    "options": [
+      "LZW",
+      "RTSP",
+      "HDMI",
+      "MPEG-DASH"
+    ],
+    "correct": 0,
+    "why": "LZW sustituye secuencias repetidas por referencias en un diccionario.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-033",
+    "topic": "T2B",
+    "q": "¿Cuántos bytes sin comprimir ocupa una imagen de 1920 × 1080 píxeles a 24 bits por píxel?",
+    "options": [
+      "6.220.800 bytes",
+      "2.073.600 bytes",
+      "49.766.400 bytes",
+      "24.883.200 bytes"
+    ],
+    "correct": 0,
+    "why": "1920 × 1080 × 24 ÷ 8 = 6.220.800 bytes.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-034",
+    "topic": "T2B",
+    "q": "¿Cuánto audio PCM ocupa 10 s a 48 kHz, 16 bits y un canal, sin cabeceras?",
+    "options": [
+      "960.000 bytes",
+      "480.000 bytes",
+      "9.600.000 bytes",
+      "120.000 bytes"
+    ],
+    "correct": 0,
+    "why": "48.000 muestras/s × 16 bits × 1 canal × 10 s ÷ 8 = 960.000 bytes.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-035",
+    "topic": "T2B",
+    "q": "¿Cuántos bytes por segundo necesita audio PCM estéreo a 44,1 kHz y 16 bits?",
+    "options": [
+      "176.400 bytes/s",
+      "88.200 bytes/s",
+      "705.600 bytes/s",
+      "44.100 bytes/s"
+    ],
+    "correct": 0,
+    "why": "44.100 × 16 × 2 ÷ 8 = 176.400 bytes/s.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-036",
+    "topic": "T2B",
+    "q": "Un vídeo comprimido a bitrate constante de 1 Mb/s dura 47 s. ¿Cuántos megabits ocupa, sin extras?",
+    "options": [
+      "47 Mb",
+      "47 MB",
+      "4.470 Mb",
+      "21,78 GB"
+    ],
+    "correct": 0,
+    "why": "Bitrate × duración = 1 Mb/s × 47 s = 47 Mb.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-037",
+    "topic": "T2B",
+    "q": "Un vídeo de 47 Mb ocupa aproximadamente, en megabytes decimales...",
+    "options": [
+      "5,875 MB",
+      "47 MB",
+      "0,5875 MB",
+      "376 MB"
+    ],
+    "correct": 0,
+    "why": "47 megabits ÷ 8 = 5,875 megabytes.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-038",
+    "topic": "T2B",
+    "q": "Un vídeo bruto de 640 × 480, 24 bits/píxel, 30 fps y 10 s ocupa...",
+    "options": [
+      "276,48 MB decimales",
+      "27,648 MB",
+      "2,7648 MB",
+      "82,944 MB"
+    ],
+    "correct": 0,
+    "why": "640 × 480 × 24 × 30 × 10 ÷ 8 = 276.480.000 bytes.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T2B-039",
+    "topic": "T2B",
+    "q": "¿Qué relación es correcta entre resolución y fps?",
+    "options": [
+      "Resolución: píxeles por fotograma; fps: fotogramas por segundo",
+      "Resolución: duración; fps: bits por muestra",
+      "Resolución: bitrate; fps: discos disponibles",
+      "Resolución: número de canales telefónicos; fps: retardo"
+    ],
+    "correct": 0,
+    "why": "La resolución es dimensión de imagen; los fps son frecuencia de imágenes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-040",
+    "topic": "T2B",
+    "q": "¿Cuál de estas parejas es correcta?",
+    "options": [
+      "H.264 es códec; MP4 es contenedor",
+      "MP4 es códec; H.264 es RAID",
+      "H.264 es pantalla; MKV es protocolo radio",
+      "MP4 es arquitectura RISC; AV1 es contenedor"
+    ],
+    "correct": 0,
+    "why": "El códec codifica/decodifica, mientras que el contenedor organiza pistas y metadatos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-041",
+    "topic": "T2B",
+    "q": "Las MMA suelen presentar, frente a aplicaciones generales...",
+    "options": [
+      "Alta localidad espacial y menor localidad temporal",
+      "Baja localidad espacial y temporal siempre alta",
+      "Localidad espacial nula y temporal infinita",
+      "Ausencia total de accesos secuenciales"
+    ],
+    "correct": 0,
+    "why": "El procesamiento de flujos multimedia recorre datos próximos y reutiliza menos cada muestra.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-042",
+    "topic": "T2B",
+    "q": "¿Qué describe mejor la localidad temporal?",
+    "options": [
+      "Volver a acceder al mismo dato poco después",
+      "Acceder a celdas de memoria próximas",
+      "Reducir la frecuencia del vídeo",
+      "Emplear paridad distribuida"
+    ],
+    "correct": 0,
+    "why": "La localidad temporal se basa en reutilización cercana en el tiempo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-043",
+    "topic": "T2B",
+    "q": "¿Cuál es la característica típica de RISC?",
+    "options": [
+      "Repertorio reducido de instrucciones relativamente simples",
+      "Repertorio ilimitado de instrucciones complejas",
+      "Hardware exclusivamente reconfigurable",
+      "Un códec de imagen sin pérdida"
+    ],
+    "correct": 0,
+    "why": "RISC se asocia a instrucciones simples y conjunto reducido.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-044",
+    "topic": "T2B",
+    "q": "¿Cuál es la característica típica de CISC?",
+    "options": [
+      "Conjunto de instrucciones que puede incluir operaciones complejas",
+      "Prohibición de instrucciones complejas",
+      "Arquitectura dedicada no programable por definición",
+      "Solo procesa audio a 44,1 kHz"
+    ],
+    "correct": 0,
+    "why": "CISC es una familia general con instrucciones más complejas que el enfoque RISC clásico.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-045",
+    "topic": "T2B",
+    "q": "Un DSP destaca especialmente por...",
+    "options": [
+      "Operaciones eficientes de procesamiento de señal, como MAC",
+      "Gestionar las etiquetas NFC de una app bancaria",
+      "Sustituir únicamente el disco de paridad RAID",
+      "Emitir anuncios AVOD"
+    ],
+    "correct": 0,
+    "why": "Los DSP se optimizan para procesamiento digital de señal y operaciones multiplicar-acumular.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-046",
+    "topic": "T2B",
+    "q": "¿Qué caracteriza a una NPU?",
+    "options": [
+      "Aceleración de operaciones de redes neuronales",
+      "Gestión del roaming y MSC",
+      "Control de la frecuencia del búfer",
+      "Creación de manifiestos M3U8"
+    ],
+    "correct": 0,
+    "why": "Las NPU especializan la ejecución de redes neuronales.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-047",
+    "topic": "T2B",
+    "q": "¿Cuál es la diferencia esencial entre ASIC y FPGA?",
+    "options": [
+      "ASIC es dedicado y fijo; FPGA puede reconfigurarse",
+      "ASIC es siempre software; FPGA es compresión de texto",
+      "ASIC es un protocolo de Internet; FPGA es RAID",
+      "Ambos son únicamente CPUs RISC"
+    ],
+    "correct": 0,
+    "why": "ASIC queda definido para su función y FPGA ofrece lógica reconfigurable.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-048",
+    "topic": "T2B",
+    "q": "Según la clasificación estudiada, ¿cuál de estas familias es programable y específica?",
+    "options": [
+      "DSP",
+      "RAID 5",
+      "LCD",
+      "NFC"
+    ],
+    "correct": 0,
+    "why": "La diapositiva 47 coloca DSP entre las arquitecturas programables específicas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-049",
+    "topic": "T2B",
+    "q": "Según la clasificación de la diapositiva 47, RISC y CISC pertenecen a...",
+    "options": [
+      "Arquitecturas programables de propósito general",
+      "Arquitecturas dedicadas monolíticas exclusivamente",
+      "Un protocolo de transmisión de señal",
+      "Almacenamiento reconfigurable de paridad"
+    ],
+    "correct": 0,
+    "why": "RISC/CISC son familias de propósito general dentro de las arquitecturas programables.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-050",
+    "topic": "T2B",
+    "q": "¿Qué diferencia correctamente tres familias de la clasificación de arquitecturas?",
+    "options": [
+      "Programables, dedicadas y reconfigurables",
+      "Unicast, multicast y broadcast",
+      "AVOD, SVOD y TVOD",
+      "RTP, RTCP y RTSP"
+    ],
+    "correct": 0,
+    "why": "Son los tres grupos principales del esquema de la diapositiva 47.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-051",
+    "topic": "T2B",
+    "q": "¿Qué función corresponde a un motor de vídeo especializado?",
+    "options": [
+      "Codificar o decodificar códecs multimedia eficientemente",
+      "Identificar etiquetas NFC",
+      "Asignar las frecuencias de un clúster",
+      "Sustituir el software de copia de seguridad"
+    ],
+    "correct": 0,
+    "why": "Estos bloques aceleran tareas específicas de compresión y descompresión de vídeo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-052",
+    "topic": "T2B",
+    "q": "¿Qué propiedad distingue habitualmente a una GPU?",
+    "options": [
+      "Paralelismo elevado en gráficos y otras cargas paralelas",
+      "Ser un RAID sin redundancia",
+      "Sustituir todos los protocolos HTTP",
+      "Almacenar caracteres en UTF-16"
+    ],
+    "correct": 0,
+    "why": "Las GPU están diseñadas para procesar muchas operaciones en paralelo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-053",
+    "topic": "T2B",
+    "q": "¿Qué mide MOPS?",
+    "options": [
+      "Millones de operaciones por segundo",
+      "Megabytes de vídeo por segundo necesariamente",
+      "Número de dispositivos NFC",
+      "Minutos de observación por suscriptor"
+    ],
+    "correct": 0,
+    "why": "MOPS describe rendimiento de operaciones, no un bitrate de red.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T2B-054",
+    "topic": "T2B",
+    "q": "¿En qué se basa la compresión perceptiva con pérdida?",
+    "options": [
+      "Eliminar detalles menos perceptibles para el oído o la vista",
+      "Reconstruir siempre bit a bit el contenido original",
+      "Duplicar todas las muestras de audio",
+      "Guardar paridad XOR de cada píxel"
+    ],
+    "correct": 0,
+    "why": "La compresión perceptiva explota limitaciones de percepción para ahorrar datos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-001",
+    "topic": "T3A",
+    "q": "¿Qué se entiende por SoC en un smartphone?",
+    "options": [
+      "Un chip que integra varias funciones como CPU, GPU y otros controladores",
+      "Un protocolo para vídeo bajo demanda",
+      "Una clase de memoria exclusivamente óptica",
+      "Un sistema de dos estaciones BTS"
+    ],
+    "correct": 0,
+    "why": "SoC es System-on-Chip e integra múltiples componentes funcionales.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-002",
+    "topic": "T3A",
+    "q": "¿Qué función desempeña normalmente la memoria RAM del móvil?",
+    "options": [
+      "Almacenar temporalmente datos y programas en uso",
+      "Guardar de forma permanente todas las fotos apagado el equipo",
+      "Sustituir la radio Bluetooth",
+      "Medir los pasos del usuario"
+    ],
+    "correct": 0,
+    "why": "La RAM es memoria de trabajo volátil; la flash guarda datos persistentes.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-003",
+    "topic": "T3A",
+    "q": "¿Para qué se utiliza habitualmente la memoria flash en un smartphone?",
+    "options": [
+      "Almacenar sistema, aplicaciones y archivos de forma persistente",
+      "Mostrar los píxeles OLED",
+      "Controlar las ondas acústicas SAW",
+      "Medir exclusivamente la temperatura"
+    ],
+    "correct": 0,
+    "why": "La memoria flash conserva su información sin alimentación.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-004",
+    "topic": "T3A",
+    "q": "¿En qué tarea destaca una NPU de un móvil?",
+    "options": [
+      "Acelerar funciones de IA y redes neuronales",
+      "Aumentar la cobertura de todas las antenas",
+      "Sustituir la batería",
+      "Guardar las señales GPS sin procesarlas"
+    ],
+    "correct": 0,
+    "why": "Una NPU acelera cargas propias de redes neuronales.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-005",
+    "topic": "T3A",
+    "q": "¿Qué significa OTA en el contexto de actualizaciones móviles?",
+    "options": [
+      "Actualización distribuida de forma inalámbrica o a distancia",
+      "Operación con doble paridad RAID",
+      "Control de un directo mediante RTSP",
+      "Pantalla táctil de ondas acústicas"
+    ],
+    "correct": 0,
+    "why": "OTA significa Over The Air.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-006",
+    "topic": "T3A",
+    "q": "Una tablet se diferencia generalmente de un smartphone por...",
+    "options": [
+      "Ofrecer una pantalla táctil mayor orientada a trabajo, ocio o educación",
+      "Usar obligatoriamente Windows de escritorio",
+      "No poder ejecutar aplicaciones móviles",
+      "No tener opción de conectividad inalámbrica"
+    ],
+    "correct": 0,
+    "why": "Las tablets suelen tener mayor pantalla; no exigen SO de escritorio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-007",
+    "topic": "T3A",
+    "q": "¿Qué caracteriza a un wearable?",
+    "options": [
+      "Dispositivo electrónico llevado sobre el cuerpo que mide, procesa o comunica",
+      "Un disco conectado por SATA",
+      "Un sistema de vídeo en directo",
+      "Un tipo de API HTTP"
+    ],
+    "correct": 0,
+    "why": "Un wearable se viste o porta y aporta funciones electrónicas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-008",
+    "topic": "T3A",
+    "q": "¿Cuál de estos ejemplos es claramente un wearable?",
+    "options": [
+      "Pulsera de actividad con sensores",
+      "Router de sobremesa",
+      "Servidor CDN de centro de datos",
+      "Impresora 3D"
+    ],
+    "correct": 0,
+    "why": "Una pulsera inteligente se lleva sobre el cuerpo y realiza funciones electrónicas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-009",
+    "topic": "T3A",
+    "q": "¿Qué reto es especialmente relevante para un wearable?",
+    "options": [
+      "Autonomía, comodidad, privacidad y fiabilidad de sensores",
+      "Evitar por completo las baterías y sensores en todos los casos",
+      "Funcionar solo enchufado a una pantalla de sobremesa",
+      "Usar exclusivamente conexión Ethernet"
+    ],
+    "correct": 0,
+    "why": "La utilidad del wearable depende de la integración práctica y de la privacidad de datos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-010",
+    "topic": "T3A",
+    "q": "Un wearable multifuncional se distingue porque...",
+    "options": [
+      "Realiza varias funciones distintas",
+      "No tiene batería por definición",
+      "Se introduce obligatoriamente en el organismo",
+      "Carece de conectividad"
+    ],
+    "correct": 0,
+    "why": "La clasificación monofuncional/multifuncional atiende al número de funciones.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-011",
+    "topic": "T3A",
+    "q": "¿Qué significa que un dispositivo wearable sea no invasivo?",
+    "options": [
+      "Que se utiliza sin introducir elementos en el interior del cuerpo",
+      "Que no capta información de ningún tipo",
+      "Que carece necesariamente de sensores",
+      "Que usa siempre una radio de 2,4 GHz"
+    ],
+    "correct": 0,
+    "why": "La diferencia invasivo/no invasivo es su relación física con el cuerpo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-012",
+    "topic": "T3A",
+    "q": "¿Qué es un e-textile o textil inteligente?",
+    "options": [
+      "Una prenda que integra elementos electrónicos como sensores o conductores",
+      "Una pantalla LCD sin retroiluminación",
+      "Una red CDNs de streaming",
+      "Un fichero de compresión de imagen"
+    ],
+    "correct": 0,
+    "why": "Los textiles inteligentes incorporan funciones electrónicas al tejido.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-013",
+    "topic": "T3A",
+    "q": "En el temario, textillography hace referencia a...",
+    "options": [
+      "Automatizar interconexiones durante la fabricación del tejido",
+      "Un códec de audio dedicado a ropa",
+      "Cualquier wearable sin sensores",
+      "Una generación comercial de Wi-Fi"
+    ],
+    "correct": 0,
+    "why": "El concepto se vincula con la integración automatizada de conexiones textiles.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-014",
+    "topic": "T3A",
+    "q": "¿Cuál es una dificultad específica de los textiles inteligentes?",
+    "options": [
+      "Mantener conductividad y comodidad tras uso y lavado",
+      "Que los móviles no usan memoria flash",
+      "La imposibilidad de integrar sensores electrónicos",
+      "Que deben disponer de un MSC propio"
+    ],
+    "correct": 0,
+    "why": "Los lavados, la flexibilidad y las conexiones son retos reales de los e-textiles.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-015",
+    "topic": "T3A",
+    "q": "Una pantalla táctil se considera dispositivo de...",
+    "options": [
+      "Entrada y salida",
+      "Solo salida, nunca entrada",
+      "Solo almacenamiento",
+      "Transmisión exclusiva de radio"
+    ],
+    "correct": 0,
+    "why": "Muestra información y recibe interacciones del usuario.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-016",
+    "topic": "T3A",
+    "q": "La detección resistiva del contacto se basa en...",
+    "options": [
+      "Presionar para poner en contacto capas conductoras",
+      "Medir necesariamente la señal GPS",
+      "Emitir luz OLED desde el dedo",
+      "Detectar la frecuencia del procesador"
+    ],
+    "correct": 0,
+    "why": "La pantalla resistiva usa presión física entre capas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-017",
+    "topic": "T3A",
+    "q": "La detección capacitiva proyectada (PCAP) usa...",
+    "options": [
+      "Variaciones de capacitancia en una rejilla de electrodos",
+      "Un contacto mecánico obligado entre dos capas",
+      "Únicamente una cámara de vídeo externa",
+      "Un cabezal de lectura RFID"
+    ],
+    "correct": 0,
+    "why": "PCAP detecta variaciones del campo eléctrico y es común en multitáctil.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-018",
+    "topic": "T3A",
+    "q": "¿Cuál de estas pantallas responde mejor, en general, a un puntero aislante corriente sin tecnología especial?",
+    "options": [
+      "Resistiva",
+      "Capacitiva proyectada convencional",
+      "AMOLED por ser OLED",
+      "IPS por no ser LCD"
+    ],
+    "correct": 0,
+    "why": "Una resistiva detecta presión, mientras que una capacitiva exige interacción eléctrica compatible.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-019",
+    "topic": "T3A",
+    "q": "¿Qué utiliza una pantalla táctil infrarroja?",
+    "options": [
+      "La interrupción de haces IR en una rejilla",
+      "Obligatoriamente dos capas que se tocan",
+      "Únicamente antenas NFC",
+      "Paridad XOR sobre píxeles"
+    ],
+    "correct": 0,
+    "why": "Las superficies táctiles IR detectan cortes en haces infrarrojos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-020",
+    "topic": "T3A",
+    "q": "¿Qué principio se asocia a las pantallas SAW?",
+    "options": [
+      "Cambios en ondas acústicas superficiales",
+      "Conexión de dos discos en espejo",
+      "Separación de celdas cocanal",
+      "Generación de radiación gamma"
+    ],
+    "correct": 0,
+    "why": "SAW se basa en ondas acústicas sobre la superficie.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-021",
+    "topic": "T3A",
+    "q": "¿Qué significa multitáctil?",
+    "options": [
+      "Reconocer varios contactos simultáneos",
+      "Mostrar varios vídeos comprimidos",
+      "Aceptar solo un dedo cada vez",
+      "Transmitir en múltiples canales de radio"
+    ],
+    "correct": 0,
+    "why": "Multitáctil detecta y gestiona múltiples puntos de contacto.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-022",
+    "topic": "T3A",
+    "q": "¿Qué función cumple HID en dispositivos de entrada?",
+    "options": [
+      "Normalizar la comunicación de eventos de periféricos de interfaz humana",
+      "Codificar audio en MP3",
+      "Hacer que todo contacto sea resistivo",
+      "Repartir canales celulares"
+    ],
+    "correct": 0,
+    "why": "HID es Human Interface Device, protocolo/especificación de entrada.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-023",
+    "topic": "T3A",
+    "q": "¿Qué describe mejor un LCD?",
+    "options": [
+      "Panel que modula una retroiluminación mediante cristal líquido",
+      "Panel cuyos píxeles son siempre autoemisivos",
+      "Una conexión NFC avanzada",
+      "Una técnica de compresión de vídeo"
+    ],
+    "correct": 0,
+    "why": "El cristal líquido controla la luz de fondo en los LCD.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-024",
+    "topic": "T3A",
+    "q": "¿Qué caracteriza a OLED?",
+    "options": [
+      "Píxeles orgánicos autoemisivos que pueden apagarse individualmente",
+      "Necesidad obligatoria de retroiluminación LCD",
+      "Usar siempre rayos infrarrojos para el tacto",
+      "Un mecanismo de codificación UTF"
+    ],
+    "correct": 0,
+    "why": "En OLED los píxeles emiten luz, permitiendo negros profundos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-025",
+    "topic": "T3A",
+    "q": "¿Qué es AMOLED?",
+    "options": [
+      "Una pantalla OLED con matriz activa",
+      "Un tipo de RAID de cuatro discos",
+      "Una versión del estándar RTSP",
+      "Una familia de etiquetas RFID"
+    ],
+    "correct": 0,
+    "why": "AMOLED significa Active-Matrix OLED.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-026",
+    "topic": "T3A",
+    "q": "¿Cuál de estas afirmaciones es correcta?",
+    "options": [
+      "IPS es una tecnología de panel LCD",
+      "IPS es exactamente lo mismo que Micro-LED",
+      "TFT excluye la existencia de cristal líquido",
+      "Retina es una técnica de autoemisión distinta de OLED"
+    ],
+    "correct": 0,
+    "why": "IPS es una modalidad de LCD, no una alternativa independiente a LCD.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-027",
+    "topic": "T3A",
+    "q": "¿Qué es Mini-LED en pantallas comerciales?",
+    "options": [
+      "Retroiluminación de un LCD mediante numerosos LED pequeños",
+      "Tecnología que siempre carece de cristal líquido",
+      "Un códec de vídeo para móviles",
+      "Un sistema de radio de corto alcance"
+    ],
+    "correct": 0,
+    "why": "Mini-LED suele mejorar la retroiluminación de paneles LCD.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-028",
+    "topic": "T3A",
+    "q": "¿Qué describe mejor Micro-LED?",
+    "options": [
+      "Píxeles LED autoemisivos de tamaño microscópico",
+      "LCD convencional con píxeles pasivos",
+      "Una marca comercial de refresco adaptativo",
+      "Una versión Bluetooth"
+    ],
+    "correct": 0,
+    "why": "Micro-LED utiliza píxeles autoemisivos y presenta retos de fabricación.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-029",
+    "topic": "T3A",
+    "q": "¿Qué mide PPI?",
+    "options": [
+      "Densidad de píxeles por pulgada",
+      "Fotogramas por segundo",
+      "Tasa de llamadas perdidas",
+      "Vatios consumidos por minuto"
+    ],
+    "correct": 0,
+    "why": "PPI es Pixels Per Inch; no debe confundirse con hercios.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-030",
+    "topic": "T3A",
+    "q": "¿Qué diferencia hay entre Hz y PPI de una pantalla?",
+    "options": [
+      "Hz indica refresco; PPI indica densidad de píxeles",
+      "Hz indica densidad; PPI indica bitrate",
+      "Ambos indican luminosidad máxima",
+      "Ambos son generaciones Wi-Fi"
+    ],
+    "correct": 0,
+    "why": "Son magnitudes independientes: tiempo de refresco y detalle espacial.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-031",
+    "topic": "T3A",
+    "q": "¿Qué tecnología puede resultar conveniente para interfaces estáticas durante muchas horas por menor riesgo de desgaste diferencial?",
+    "options": [
+      "LCD",
+      "AMOLED exclusivamente",
+      "OLED obligatoriamente",
+      "Micro-LED por usar paridad"
+    ],
+    "correct": 0,
+    "why": "Los píxeles OLED pueden envejecer de forma desigual; LCD puede ser ventajosa para contenido estático.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-032",
+    "topic": "T3A",
+    "q": "¿Qué define mejor Bluetooth Low Energy (LE)?",
+    "options": [
+      "Una tecnología Bluetooth diseñada para comunicaciones de bajo consumo",
+      "Un estándar de almacenamiento por paridad",
+      "Una técnica de iluminación OLED",
+      "Una variante de RTP para audio"
+    ],
+    "correct": 0,
+    "why": "BLE busca bajo consumo y se usa ampliamente en sensores y wearables.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-033",
+    "topic": "T3A",
+    "q": "¿Qué relación es correcta entre ANT y ANT+?",
+    "options": [
+      "ANT es protocolo inalámbrico; ANT+ añade perfiles interoperables",
+      "ANT+ es siempre Ethernet y ANT es USB",
+      "ANT+ es un tipo de pantalla",
+      "ANT y ANT+ son niveles RAID"
+    ],
+    "correct": 0,
+    "why": "ANT+ define perfiles de intercambio de datos sobre ANT.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-034",
+    "topic": "T3A",
+    "q": "¿Qué caracteriza habitualmente a Zigbee?",
+    "options": [
+      "Redes de sensores de bajo consumo y posibilidad de malla",
+      "Vídeo 8K bruto con mayor bitrate que Wi-Fi por defecto",
+      "Exclusivo para transmisión por luz infrarroja",
+      "Operar como tipo de pantalla capacitiva"
+    ],
+    "correct": 0,
+    "why": "Zigbee se usa en domótica y puede construir topologías mesh.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-035",
+    "topic": "T3A",
+    "q": "¿Cuál es la diferencia fundamental entre Wi-Fi y acceso a Internet?",
+    "options": [
+      "Wi-Fi conecta a una red local; esa red puede o no tener Internet",
+      "Cualquier Wi-Fi garantiza Internet",
+      "La presencia de Internet implica siempre Wi-Fi",
+      "Wi-Fi es sinónimo de red 5G celular"
+    ],
+    "correct": 0,
+    "why": "IEEE 802.11 define la LAN inalámbrica, no garantiza conexión exterior.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-036",
+    "topic": "T3A",
+    "q": "¿Qué tecnologías pueden coexistir con interferencia en torno a 2,4 GHz?",
+    "options": [
+      "Bluetooth y algunas redes Wi-Fi",
+      "NFC y GPS siempre en la misma banda",
+      "RFID LF y fibra óptica",
+      "Una pantalla OLED y un disco RAID"
+    ],
+    "correct": 0,
+    "why": "Bluetooth y redes Wi-Fi en 2,4 GHz comparten espectro y pueden interferirse.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-037",
+    "topic": "T3A",
+    "q": "¿Cuál es la principal diferencia entre NFC y el conjunto de tecnologías RFID?",
+    "options": [
+      "NFC funciona a 13,56 MHz y RFID incluye varias bandas y tecnologías",
+      "Todo RFID funciona necesariamente a 13,56 MHz",
+      "NFC transmite datos por cable Ethernet",
+      "Todas las etiquetas RFID pueden leerse desde cualquier móvil"
+    ],
+    "correct": 0,
+    "why": "NFC usa 13,56 MHz; RFID es una familia más amplia (LF, HF, UHF).",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-038",
+    "topic": "T3A",
+    "q": "¿Puede un móvil con NFC leer cualquier etiqueta RFID?",
+    "options": [
+      "No; depende de banda, protocolo y compatibilidad",
+      "Sí; todas las etiquetas RFID son iguales",
+      "No; NFC nunca es compatible con etiquetas RFID HF",
+      "Solo si el móvil usa RAID 1"
+    ],
+    "correct": 0,
+    "why": "La compatibilidad depende de frecuencia y formato; algunas etiquetas RFID HF sí funcionan.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-039",
+    "topic": "T3A",
+    "q": "¿Qué tecnología de corto alcance suele necesitar línea de visión o alineación directa?",
+    "options": [
+      "IrDA",
+      "Bluetooth LE",
+      "Wi-Fi",
+      "Zigbee mesh"
+    ],
+    "correct": 0,
+    "why": "IrDA utiliza infrarrojos, que tienen requisitos ópticos de alineación.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-040",
+    "topic": "T3A",
+    "q": "¿Qué aplicación es característica de NFC?",
+    "options": [
+      "Pago de proximidad o lectura de etiquetas compatibles",
+      "Difusión unicast de vídeo en una CDN global",
+      "Almacenamiento por doble paridad",
+      "Procesamiento de vídeo H.265"
+    ],
+    "correct": 0,
+    "why": "NFC está diseñado para interacciones a centímetros.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3A-041",
+    "topic": "T3A",
+    "q": "¿Qué ventaja general tiene Wi-Fi frente a soluciones de sensores de muy bajo consumo?",
+    "options": [
+      "Mayor capacidad habitual de transmisión de datos",
+      "Garantía de consumo siempre menor que ANT",
+      "Imposibilidad de conectar a una LAN",
+      "Funcionamiento exclusivo con línea de visión"
+    ],
+    "correct": 0,
+    "why": "Wi-Fi suele priorizar red y caudal; ANT/BLE se orientan mucho al bajo consumo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-001",
+    "topic": "T3B",
+    "q": "¿Cuál es la idea básica de una red celular?",
+    "options": [
+      "Dividir el territorio en celdas para reutilizar recursos radio",
+      "Asignar una frecuencia exclusiva a cada usuario del país para siempre",
+      "Evitar todas las estaciones base",
+      "Utilizar siempre cobertura perfectamente hexagonal real"
+    ],
+    "correct": 0,
+    "why": "El modelo celular permite reutilizar frecuencias en zonas separadas.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-002",
+    "topic": "T3B",
+    "q": "¿Por qué se dibujan hexágonos al estudiar sistemas celulares?",
+    "options": [
+      "Son una aproximación geométrica útil para planificar cobertura y reutilización",
+      "Las ondas de radio producen hexágonos exactos en la realidad",
+      "Las antenas solo transmiten hacia seis usuarios",
+      "El móvil necesita ver seis BTS simultáneamente"
+    ],
+    "correct": 0,
+    "why": "Las formas hexagonales son una idealización que facilita los cálculos.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-003",
+    "topic": "T3B",
+    "q": "¿Qué significa trunking en telefonía celular?",
+    "options": [
+      "Compartir un conjunto de canales asignados según la demanda de comunicaciones",
+      "Reservar un canal distinto de por vida a cada abonado",
+      "Conservar los datos en un disco espejo",
+      "Transmitir siempre vídeo en multicast"
+    ],
+    "correct": 0,
+    "why": "Los canales se asignan dinámicamente y se liberan al terminar su uso.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-004",
+    "topic": "T3B",
+    "q": "¿Qué es un clúster celular clásico?",
+    "options": [
+      "Un grupo de N celdas que utiliza el conjunto completo de grupos de frecuencias del plan",
+      "Un único terminal móvil con varios sensores",
+      "Un conjunto de servidores web",
+      "Una zona que debe compartir exactamente la misma frecuencia entre todas las celdas"
+    ],
+    "correct": 0,
+    "why": "Un clúster contiene celdas con grupos de canales organizados para reutilización.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-005",
+    "topic": "T3B",
+    "q": "¿Qué fórmula permite calcular los tamaños geométricamente posibles de clúster clásico?",
+    "options": [
+      "N = i² + ij + j²",
+      "N = i + j + 1",
+      "N = i² − j²",
+      "N = 2ij solamente"
+    ],
+    "correct": 0,
+    "why": "La retícula hexagonal permite N = i² + ij + j² con i,j enteros adecuados.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-006",
+    "topic": "T3B",
+    "q": "Para i = 2 y j = 1, ¿qué tamaño de clúster obtenemos?",
+    "options": [
+      "7",
+      "5",
+      "6",
+      "9"
+    ],
+    "correct": 0,
+    "why": "N = 2² + 2×1 + 1² = 7.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-007",
+    "topic": "T3B",
+    "q": "Para i = 2 y j = 2, el tamaño N del clúster es...",
+    "options": [
+      "12",
+      "8",
+      "16",
+      "6"
+    ],
+    "correct": 0,
+    "why": "N = 4 + 4 + 4 = 12.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-008",
+    "topic": "T3B",
+    "q": "Para i = 2 y j = 0, ¿cuántas celdas tiene el clúster?",
+    "options": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "correct": 0,
+    "why": "N = 2² + 0 + 0 = 4.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-009",
+    "topic": "T3B",
+    "q": "¿Cuál de los siguientes tamaños NO se obtiene de N = i² + ij + j² con i,j enteros no negativos?",
+    "options": [
+      "5",
+      "3",
+      "4",
+      "7"
+    ],
+    "correct": 0,
+    "why": "3, 4 y 7 sí son tamaños del modelo; 5 no puede obtenerse de la fórmula.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-010",
+    "topic": "T3B",
+    "q": "Si el tamaño de clúster es N = 7, el factor de reutilización es...",
+    "options": [
+      "1/7",
+      "7",
+      "1/49",
+      "7/2"
+    ],
+    "correct": 0,
+    "why": "El factor de reutilización de frecuencias es 1/N.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-011",
+    "topic": "T3B",
+    "q": "Una red tiene 490 canales dúplex y un clúster de 7 celdas. ¿Cuántos canales dúplex corresponden a cada celda si el reparto es uniforme?",
+    "options": [
+      "70",
+      "1470",
+      "3430",
+      "7"
+    ],
+    "correct": 0,
+    "why": "K = T/N = 490/7 = 70 canales por celda.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-012",
+    "topic": "T3B",
+    "q": "Si existen 420 canales dúplex y N = 12, ¿cuántos canales por celda corresponden?",
+    "options": [
+      "35",
+      "12",
+      "5040",
+      "70"
+    ],
+    "correct": 0,
+    "why": "K = 420/12 = 35 canales/celda.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-013",
+    "topic": "T3B",
+    "q": "Si un clúster con 490 canales en total se replica 3 veces, ¿cuál es la capacidad teórica total de canales simultáneos?",
+    "options": [
+      "1470",
+      "70",
+      "490/3",
+      "3430"
+    ],
+    "correct": 0,
+    "why": "Tres copias completas del clúster aportan M×T = 3×490 = 1470 canales.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-014",
+    "topic": "T3B",
+    "q": "¿A qué afecta aumentar N manteniendo el tamaño de cada celda?",
+    "options": [
+      "Aumenta separación cocanal, reduce interferencia y reduce canales por celda",
+      "Siempre aumenta canales por celda sin coste",
+      "Elimina la necesidad de estación base",
+      "No influye en la interferencia cocanal"
+    ],
+    "correct": 0,
+    "why": "Clúster mayor implica reutilización menos frecuente y más distancia entre celdas cocanal.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-015",
+    "topic": "T3B",
+    "q": "Al reducir N sin cambiar otras condiciones, cabe esperar...",
+    "options": [
+      "Mayor reutilización y capacidad por área, pero más riesgo de interferencia cocanal",
+      "Menor reutilización y siempre menor interferencia",
+      "Que desaparezcan las estaciones base",
+      "Que todas las llamadas sean gratuitas"
+    ],
+    "correct": 0,
+    "why": "Más frecuencia reutilizada eleva capacidad y acerca las celdas cocanal.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-016",
+    "topic": "T3B",
+    "q": "¿Qué origina la interferencia cocanal?",
+    "options": [
+      "Señales de celdas distintas que reutilizan la misma frecuencia",
+      "Únicamente señales de un equipo RFID cercano",
+      "Errores Unicode en el SMS",
+      "Que el móvil tenga pantalla AMOLED"
+    ],
+    "correct": 0,
+    "why": "La interferencia cocanal proviene de emisores que comparten recursos frecuenciales.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-017",
+    "topic": "T3B",
+    "q": "En el modelo hexagonal, la relación entre distancia cocanal y radio celular es...",
+    "options": [
+      "D/R = √(3N)",
+      "D/R = 1/N",
+      "D/R = N²",
+      "D/R = 3 + N²"
+    ],
+    "correct": 0,
+    "why": "Es la relación geométrica ideal entre D, R y tamaño de clúster N.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-018",
+    "topic": "T3B",
+    "q": "Para N = 3, ¿cuánto vale D/R en el modelo ideal?",
+    "options": [
+      "3",
+      "√3",
+      "9",
+      "1/3"
+    ],
+    "correct": 0,
+    "why": "D/R = √(3×3) = √9 = 3.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-019",
+    "topic": "T3B",
+    "q": "Si la relación lineal de potencias S/I es 100, ¿cuál es su valor en decibelios?",
+    "options": [
+      "20 dB",
+      "10 dB",
+      "100 dB",
+      "2 dB"
+    ],
+    "correct": 0,
+    "why": "10×log10(100) = 20 dB.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-020",
+    "topic": "T3B",
+    "q": "Si S/I = 10 dB para una razón de potencias, el cociente lineal es...",
+    "options": [
+      "10",
+      "1",
+      "100",
+      "20"
+    ],
+    "correct": 0,
+    "why": "10^(10/10) = 10.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-021",
+    "topic": "T3B",
+    "q": "¿Por qué aumentar indiscriminadamente la potencia de las BTS no elimina necesariamente la interferencia cocanal?",
+    "options": [
+      "También puede elevar las señales interferentes de otras celdas",
+      "La interferencia solo depende del color de la antena",
+      "La potencia transforma todas las señales en Bluetooth",
+      "Las frecuencias cocanal dejan de existir a mayor potencia"
+    ],
+    "correct": 0,
+    "why": "Más potencia no garantiza mejorar la razón señal/interferencia si también suben las interferencias.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-022",
+    "topic": "T3B",
+    "q": "¿Qué es el cell splitting?",
+    "options": [
+      "Dividir una celda grande en otras más pequeñas para aumentar capacidad por área",
+      "Juntar varios discos en RAID 5",
+      "Comprimir el vídeo a menor resolución",
+      "Duplicar la frecuencia central de toda la red"
+    ],
+    "correct": 0,
+    "why": "Las celdas pequeñas pueden reutilizar recursos con mayor densidad, con más infraestructura y handovers.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-023",
+    "topic": "T3B",
+    "q": "¿Qué función corresponde a la BTS en GSM clásico?",
+    "options": [
+      "Comunicación radio directa con los móviles",
+      "Autenticación exclusiva de APIs HTTP",
+      "Almacenar todos los vídeos del operador",
+      "Convertir UTF-16 en UTF-32"
+    ],
+    "correct": 0,
+    "why": "La estación BTS es el elemento de acceso radio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-024",
+    "topic": "T3B",
+    "q": "¿Qué función corresponde al BSC?",
+    "options": [
+      "Controlar varias BTS y gestionar determinados recursos y handovers",
+      "Almacenar el sistema operativo del móvil",
+      "Actuar solo como pantalla táctil",
+      "Codificar imágenes PNG"
+    ],
+    "correct": 0,
+    "why": "El BSC coordina estaciones base y controla recursos radio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-025",
+    "topic": "T3B",
+    "q": "¿Qué función corresponde al MSC?",
+    "options": [
+      "Conmutar/controlar llamadas y coordinar traspasos que lo requieran",
+      "Actuar como lector NFC obligatorio",
+      "Hacer la compresión H.264 en todas las BTS",
+      "Calcular paridad de RAID 0"
+    ],
+    "correct": 0,
+    "why": "El MSC aporta funciones de conmutación y coordinación en la red clásica.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-026",
+    "topic": "T3B",
+    "q": "¿En qué consiste el paging celular?",
+    "options": [
+      "La red busca o avisa a un terminal para establecer una comunicación entrante",
+      "El móvil descarga una página web por Wi-Fi",
+      "La BTS cambia automáticamente a OLED",
+      "El usuario elige el codec del vídeo"
+    ],
+    "correct": 0,
+    "why": "Paging localiza/avisa al móvil destinatario de una llamada.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-027",
+    "topic": "T3B",
+    "q": "¿Qué es un handover?",
+    "options": [
+      "Transferencia de una comunicación activa entre recursos o celdas para mantenerla",
+      "Bloqueo definitivo de todas las llamadas",
+      "Compresión de audio en streaming",
+      "Instalación de una PWA"
+    ],
+    "correct": 0,
+    "why": "El handover trata de conservar la llamada al cambiar las condiciones de radio o posición.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-028",
+    "topic": "T3B",
+    "q": "En un handover entre celdas gestionadas por el mismo BSC, suele intervenir principalmente...",
+    "options": [
+      "El BSC",
+      "El servidor OCA",
+      "El controlador RAID",
+      "El lector RFID"
+    ],
+    "correct": 0,
+    "why": "En el traspaso intercelda dentro de un mismo BSC, este puede gestionarlo.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-029",
+    "topic": "T3B",
+    "q": "Un handover entre BSC distintos dentro de un mismo MSC suele estar coordinado por...",
+    "options": [
+      "El MSC",
+      "El navegador web",
+      "La tarjeta de memoria flash",
+      "Un protocolo HLS"
+    ],
+    "correct": 0,
+    "why": "Cuando cambia el BSC, interviene el MSC en el esquema clásico.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-030",
+    "topic": "T3B",
+    "q": "En 2G, la gestión del handover puede corresponder a...",
+    "options": [
+      "BSC y MSC según el tipo de traspaso",
+      "Únicamente al HLR en todos los casos",
+      "Siempre al teléfono sin red",
+      "Solo al servidor de vídeo"
+    ],
+    "correct": 0,
+    "why": "BSC gestiona traspasos locales y MSC coordina otros de mayor alcance.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-031",
+    "topic": "T3B",
+    "q": "En MAHO, ¿quién mide y quién decide el traspaso?",
+    "options": [
+      "Mide el móvil y decide la red",
+      "Mide y decide solo el móvil",
+      "Mide y decide solo el servidor web",
+      "Mide la red y decide el disco duro"
+    ],
+    "correct": 0,
+    "why": "Mobile-Assisted Handover implica medidas móviles que ayudan a decisión de la red.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-032",
+    "topic": "T3B",
+    "q": "En NCHO, ¿quién controla el proceso según la clasificación clásica?",
+    "options": [
+      "La red mide y decide",
+      "El usuario pulsa manualmente un botón",
+      "El móvil decide siempre solo",
+      "El servidor CDN mide la red radio"
+    ],
+    "correct": 0,
+    "why": "NCHO = Network-Controlled Handover.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-033",
+    "topic": "T3B",
+    "q": "¿Qué significa hard handover?",
+    "options": [
+      "Break before make: se interrumpe la conexión antigua antes de establecer la nueva",
+      "Make before break: coexistencia de ambas conexiones",
+      "No cambiar nunca de celda",
+      "Dividir una celda en sectores"
+    ],
+    "correct": 0,
+    "why": "Hard handover usa la secuencia romper antes de establecer.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-034",
+    "topic": "T3B",
+    "q": "¿Qué significa soft handover?",
+    "options": [
+      "Make before break: conexión nueva antes de liberar la anterior",
+      "Break before make exclusivamente",
+      "Conexión sin ninguna señal de radio",
+      "Selección fija de clúster N = 1"
+    ],
+    "correct": 0,
+    "why": "Soft handover mantiene solapamiento temporal de las conexiones.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-035",
+    "topic": "T3B",
+    "q": "¿Qué evita la histéresis en decisiones de handover?",
+    "options": [
+      "Cambios repetidos entre celdas por fluctuaciones pequeñas de señal",
+      "Cualquier pérdida de paquetes en Internet",
+      "El uso de celdas de tamaño pequeño",
+      "La existencia de ruido térmico en la antena"
+    ],
+    "correct": 0,
+    "why": "La histéresis reduce el efecto ping-pong en los cambios de celda.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-036",
+    "topic": "T3B",
+    "q": "¿Qué diferencia hay entre bloqueo y pérdida de llamada?",
+    "options": [
+      "Bloqueo impide iniciar una llamada; pérdida corta una ya establecida",
+      "Son siempre el mismo evento en el sistema",
+      "Bloqueo solo ocurre en vídeos",
+      "Pérdida significa que una PWA no abre"
+    ],
+    "correct": 0,
+    "why": "Las nuevas llamadas pueden bloquearse; las comunicaciones activas pueden caer.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-037",
+    "topic": "T3B",
+    "q": "¿Para qué se reservan canales de guarda en un sistema celular?",
+    "options": [
+      "Para priorizar handovers y disminuir llamadas en curso cortadas",
+      "Para aumentar únicamente la publicidad en vídeos",
+      "Para bloquear obligatoriamente cualquier handover",
+      "Para almacenar copias de seguridad"
+    ],
+    "correct": 0,
+    "why": "Los guard channels sacrifican algo de admisión de llamadas nuevas para proteger transferencias.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-038",
+    "topic": "T3B",
+    "q": "¿Qué significa 1 Erlang de intensidad de tráfico?",
+    "options": [
+      "Ocupación media equivalente a un circuito durante todo el periodo",
+      "Una llamada exacta por segundo independientemente de su duración",
+      "Un megabit por segundo",
+      "Una llamada perdida cada cien intentos"
+    ],
+    "correct": 0,
+    "why": "Un Erlang expresa carga media equivalente a un circuito ocupado constantemente.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-039",
+    "topic": "T3B",
+    "q": "Se registran 1200 llamadas de duración media 1,5 minutos durante 3 horas. ¿Cuál es la intensidad de tráfico?",
+    "options": [
+      "10 Erlangs",
+      "30 Erlangs",
+      "40 Erlangs",
+      "20 Erlangs"
+    ],
+    "correct": 0,
+    "why": "A = 1200 × 1,5 min / 180 min = 10 Erlangs.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-040",
+    "topic": "T3B",
+    "q": "Un grupo recibe 300 llamadas de 2 minutos de media en 60 minutos. ¿Qué intensidad de tráfico tiene?",
+    "options": [
+      "10 Erlangs",
+      "5 Erlangs",
+      "20 Erlangs",
+      "600 Erlangs"
+    ],
+    "correct": 0,
+    "why": "A = C×h/T = 300×2/60 = 10 Erlangs.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-041",
+    "topic": "T3B",
+    "q": "Si se reciben 60 llamadas por hora y cada una dura 3 minutos de media, el tráfico ofrecido ideal es...",
+    "options": [
+      "3 Erlangs",
+      "180 Erlangs",
+      "20 Erlangs",
+      "1 Erlang"
+    ],
+    "correct": 0,
+    "why": "A = 60×(3/60) = 3 Erlangs.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-042",
+    "topic": "T3B",
+    "q": "Un grupo soporta 5 Erlangs durante 2 horas. ¿Cuál es el volumen equivalente de ocupación?",
+    "options": [
+      "10 horas de circuito",
+      "2,5 horas de circuito",
+      "5 minutos de circuito",
+      "7 Erlangs por minuto"
+    ],
+    "correct": 0,
+    "why": "Volumen = intensidad × tiempo = 5×2 = 10 horas de ocupación.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-043",
+    "topic": "T3B",
+    "q": "¿Cuál es la relación correcta entre tráfico ofrecido, cursado y perdido en un modelo de pérdidas?",
+    "options": [
+      "TO = TC + TP",
+      "TP = TC + TO",
+      "TC = TO + TP",
+      "TO = TP − TC"
+    ],
+    "correct": 0,
+    "why": "El tráfico ofrecido se divide en lo atendido y lo no atendido.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-044",
+    "topic": "T3B",
+    "q": "Si el tráfico ofrecido es 15 Erlangs y se cursan 12 Erlangs, el perdido es...",
+    "options": [
+      "3 Erlangs",
+      "27 Erlangs",
+      "12 Erlangs",
+      "180 Erlangs"
+    ],
+    "correct": 0,
+    "why": "TP = TO − TC = 15 − 12 = 3 Erlangs.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-045",
+    "topic": "T3B",
+    "q": "¿Qué es el tráfico perdido?",
+    "options": [
+      "Demanda que llega al sistema pero no puede ser atendida",
+      "Solo la suma de llamadas completadas",
+      "Tiempo acumulado de un único canal ocupado",
+      "Un mensaje que se retrasa dentro del búfer"
+    ],
+    "correct": 0,
+    "why": "El tráfico perdido es la parte de la carga ofrecida que no llega a cursarse.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-046",
+    "topic": "T3B",
+    "q": "Si se bloquean 4 de cada 200 intentos de llamada, el GoS estimado es...",
+    "options": [
+      "2 %",
+      "4 %",
+      "20 %",
+      "0,2 %"
+    ],
+    "correct": 0,
+    "why": "4/200 = 0,02 = 2 %.",
+    "kind": "calculo"
+  },
+  {
+    "id": "T3B-047",
+    "topic": "T3B",
+    "q": "¿Qué diferencia hay entre tasa de llamadas e intensidad de tráfico?",
+    "options": [
+      "La tasa es llamadas por tiempo; la intensidad es carga media en Erlangs",
+      "Ambas tienen exactamente las mismas unidades",
+      "La intensidad siempre se mide en megabytes",
+      "La tasa solo existe si se usa HLS"
+    ],
+    "correct": 0,
+    "why": "Las llamadas/hora miden tasa; Erlang mide carga promedio.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T3B-048",
+    "topic": "T3B",
+    "q": "¿Qué relación es correcta sobre GoS y QoS?",
+    "options": [
+      "GoS mide bloqueo o congestión; QoS incluye otras propiedades de calidad",
+      "GoS y QoS son sinónimos exactos",
+      "QoS expresa solo número de BTS",
+      "GoS es la velocidad de vídeo"
+    ],
+    "correct": 0,
+    "why": "GoS se enfoca en probabilidad de pérdida/bloqueo, mientras QoS es más amplia.",
+    "kind": "teoria"
+  },
+  {
+    "id": "T4-001",
+    "topic": "T4",
+    "q": "¿Qué es OpenAPI?",
+    "options": [
+      "Una especificación abierta y estandarizada para describir APIs HTTP",
+      "Un lenguaje de programación que sustituye a JavaScript",
+      "Un protocolo físico de radio de corto alcance",
+      "Un sistema de almacenamiento redundante"
+    ],
+    "correct": 0,
+    "why": "OpenAPI describe contratos de APIs HTTP; Swagger es una familia de herramientas que puede trabajar con la especificación.",
+    "kind": "teoria"
+  }
+]</script>
+  <script>
+  (()=>{'use strict';
+    const BANK=JSON.parse(document.querySelector('#question-data').textContent);
+    const T=[{id:'T1',title:'Tema 1',name:'Aplicaciones multiplataforma',icon:'⌘',detail:'Nativa, híbrida, PWA, Ionic y frameworks.'},{id:'T2A',title:'Tema 2.1',name:'Multimedia y streaming',icon:'◉',detail:'AVOD, protocolos, jitter, CDN y Netflix.'},{id:'T2B',title:'Tema 2.2',name:'Almacenamiento y arquitecturas',icon:'▤',detail:'RAID, formatos, cálculos y procesadores.'},{id:'T3A',title:'Tema 3.1',name:'Dispositivos y conectividad',icon:'◈',detail:'Wearables, pantallas, Bluetooth y NFC.'},{id:'T3B',title:'Tema 3.2',name:'Telefonía celular',icon:'▥',detail:'Clústeres, handover, tráfico y Erlangs.'},{id:'T4',title:'Tema 4',name:'OpenAPI',icon:'{}',detail:'Concepto fundamental de OpenAPI.'}];
+    const KEY='dism-test-progress-v1',SESSION_KEY='dism-test-session-v1';
+    const $=s=>document.querySelector(s);let saved={attempts:{},history:[]},session=null,screen='home',position=0,reviewFilter='wrong',lastResults=null,installPrompt=null;
+    const html=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const shuffled=arr=>{const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+    const getTopic=id=>T.find(t=>t.id===id);
+    const duration=seconds=>seconds>=60?`${Math.floor(seconds/60)} min ${seconds%60} s`:`${seconds} s`;
+    function store(){try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}}
+    function storeSession(){try{if(session)localStorage.setItem(SESSION_KEY,JSON.stringify({session,position}));else localStorage.removeItem(SESSION_KEY)}catch(e){}}
+    try{const val=JSON.parse(localStorage.getItem(KEY)||'null');if(val&&typeof val==='object'&&val.attempts&&Array.isArray(val.history)){saved=val}}catch(e){}
+    try{const v=JSON.parse(localStorage.getItem(SESSION_KEY)||'null');if(v?.session?.ids&&v.session.ids.every(id=>BANK.some(x=>x.id===id))){session=v.session;position=Math.min(Math.max(0,v.position||0),session.ids.length-1)}}catch(e){}
+    function countFor(id){return BANK.filter(x=>x.topic===id).length}
+    function stats(){const a=Object.values(saved.attempts);return {seen:a.length,mastered:a.filter(x=>x.correct>0).length,wrong:a.filter(x=>x.lastWrong).length,totalTests:saved.history.length}}
+    function topicStats(id){const b=BANK.filter(x=>x.topic===id);const seen=b.filter(x=>saved.attempts[x.id]).length;const mastered=b.filter(x=>saved.attempts[x.id]?.correct>0).length;const wrong=b.filter(x=>saved.attempts[x.id]?.lastWrong).length;return {seen,mastered,wrong,total:b.length}}
+    function percent(a,b){return b?Math.round(a/b*100):0}
+    function progressBar(n,tot){return `<div class="progress" role="progressbar" aria-label="Preguntas ya practicadas" aria-valuenow="${n}" aria-valuemin="0" aria-valuemax="${tot}"><div class="bar" style="width:${percent(n,tot)}%"></div></div>`}
+    function nav(){document.querySelectorAll('[data-nav]').forEach(x=>x.classList.toggle('current',x.dataset.nav===screen))}
+    function show(which,scroll=true){screen=which;nav();render();if(scroll)window.scrollTo(0,0)}
+    function topicCard(t){const a=topicStats(t.id);const counts=[10,20,a.total].filter((x,i,arr)=>arr.indexOf(x)===i&&x<=a.total);if(a.total<10)counts.splice(0,counts.length,a.total);return `<article class="topic"><div class="topic-top"><span class="subject-icon">${html(t.icon)}</span><span class="count">${a.total} preguntas</span></div><div><div class="eyebrow" style="font-size:10px">${html(t.title)}</div><h3>${html(t.name)}</h3><p class="desc">${html(t.detail)}</p></div>${progressBar(a.seen,a.total)}<div class="topic-foot"><div class="topic-actions">${counts.map(n=>`<button class="button tiny ${n===20?'primary':''}" data-action="start" data-topic="${t.id}" data-count="${n}">${n===a.total&&a.total>20?'Todas':a.total===1?'Hacer test':`${n} preguntas`}</button>`).join('')}</div><span class="topic-meta">${a.seen}/${a.total}</span></div></article>`}
+    function home(){const a=stats();const recent=saved.history[0];return `<section class="hero"><div class="eyebrow">Tu entrenamiento para el parcial</div><h1>Practica hasta que<br><span style="color:var(--mint)">no te queden dudas.</span></h1><p>${BANK.length} preguntas originales basadas en los temas de DISM, con cálculos, explicaciones y simulacros mezclados. Hecha para practicar desde el móvil.</p><div class="actions"><button class="button primary big" data-action="mixed" data-count="30">Simulacro · 30 preguntas ↗</button><button class="button big" data-action="mixed" data-count="25">Aleatorio · 25 preguntas</button></div><div class="hero-meta"><span><strong>6</strong> bloques</span><span><strong>${BANK.filter(x=>x.kind==='calculo').length}</strong> preguntas de cálculo</span><span><strong>Sin anuncios</strong></span></div></section><div class="stat-grid"><div class="stat"><div class="text">Preguntas vistas</div><div class="num">${a.seen}<span class="small-muted"> / ${BANK.length}</span></div></div><div class="stat"><div class="text">Tests realizados</div><div class="num">${a.totalTests}</div></div><div class="stat"><div class="text">Fallos a repasar</div><div class="num" style="color:${a.wrong?'var(--amber)':'var(--mint)'}">${a.wrong}</div></div></div>${session?`<div class="callout" style="margin-top:17px"><strong>Tienes un test pendiente.</strong> Puedes continuar donde lo dejaste. <button class="button tiny primary" data-action="resume" style="margin-left:8px">Continuar</button></div>`:''}<div class="section-head"><div><h2>Practicar por tema</h2><p>Elige 10, 20 o todas las preguntas del bloque.</p></div></div><div class="topic-grid">${T.map(topicCard).join('')}</div>${recent?`<div class="panel" style="margin-top:25px"><div class="topline"><strong>Último test</strong><span class="small-muted">${new Date(recent.date).toLocaleDateString('es-ES')}</span></div><p style="margin:12px 0 4px"><b>${html(recent.label)}</b> · ${recent.correct}/${recent.total} correctas · ${percent(recent.correct,recent.total)}%</p></div>`:''}<p class="footnote">* La app funciona sin conexión después de abrirla una vez desde su dirección web segura e instalarse. El temario sigue las exclusiones provisionales identificadas por tu compañero; no sustituye las indicaciones oficiales del profesor.</p>`}
+    function buildMixed(n){const chosen=[];const all=shuffled(T.filter(t=>t.id!=='T4'));chosen.push(...shuffled(BANK.filter(x=>x.topic==='T4')).slice(0,1));for(let i=0;i<n-1;i++){const t=all[i%all.length];const available=shuffled(BANK.filter(x=>x.topic===t.id&&!chosen.some(c=>c.id===x.id)));if(available.length)chosen.push(available[0]);}return shuffled(chosen).slice(0,n)}
+    function startQuiz(topic,count,wrongOnly=false){if(session&&!window.confirm('Hay un test sin terminar. ¿Descartarlo y empezar otro?'))return;let selection;if(wrongOnly){selection=shuffled(BANK.filter(q=>saved.attempts[q.id]?.lastWrong)).slice(0,count)}else if(topic==='mixed'){selection=buildMixed(count)}else{selection=shuffled(BANK.filter(x=>x.topic===topic)).slice(0,count)}if(!selection.length){show('mistakes');return;}session={ids:selection.map(x=>x.id),orders:selection.map(()=>shuffled([0,1,2,3])),answers:Array(selection.length).fill(null),label:wrongOnly?'Repaso de fallos':topic==='mixed'?`Simulacro aleatorio (${count})`:`${getTopic(topic).title} · ${getTopic(topic).name}`,started:Date.now()};position=0;storeSession();show('quiz')}
+    function qAt(i){return BANK.find(x=>x.id===session.ids[i])}
+    function quiz(){if(!session){return `<div class="empty" style="margin-top:45px">No hay un test activo.<p><button class="button primary" data-action="home">Volver al inicio</button></p></div>`}const q=qAt(position),selected=session.answers[position],completed=session.answers.filter(x=>x!==null).length;return `<section class="quiz-shell"><div class="quiz-head"><div><div class="quiz-eyebrow">${html(session.label)}</div><div class="quiz-title">Pregunta ${position+1} de ${session.ids.length}</div></div><button class="button tiny ghost" data-action="abandon">Salir</button></div><div class="quiz-progress" aria-label="Progreso de preguntas">${session.ids.map((_,i)=>`<i class="${session.answers[i]!==null?'done':i===position?'active':''}"></i>`).join('')}</div><article class="q-card"><div class="question-meta"><span>${completed} respondidas · ${session.ids.length-completed} pendientes</span><span class="type">${q.kind==='calculo'?'✎ Cálculo':'◈ Teoría'}</span></div><h1>${html(q.q)}</h1><div class="opt-list" role="group" aria-label="Opciones de respuesta">${session.orders[position].map((orig,k)=>`<button class="opt ${selected===orig?'selected':''}" data-action="answer" data-option="${orig}" aria-pressed="${selected===orig}"><span class="letter">${'ABCD'[k]}</span><span>${html(q.options[orig])}</span></button>`).join('')}</div><div class="question-bottom"><button class="button tiny ghost" data-action="clear" ${selected===null?'disabled':''}>Borrar respuesta</button><div class="quiz-controls"><button class="button" data-action="prev" ${position===0?'disabled':''}>← Anterior</button><button class="button primary" data-action="next">${position===session.ids.length-1?'Finalizar test':'Siguiente →'}</button></div></div></article><div class="q-jump" aria-label="Ir a otra pregunta">${session.ids.map((x,i)=>`<button class="jump ${i===position?'current':''} ${session.answers[i]!==null?'answered':''}" data-action="jump" data-index="${i}" aria-label="Pregunta ${i+1}${session.answers[i]!==null?', respondida':''}" aria-current="${i===position?'step':'false'}">${i+1}</button>`).join('')}</div><p class="hint">Puedes ir atrás, dejar preguntas en blanco y volver a ellas. Las soluciones aparecen al terminar.</p></section>`}
+    function finish(){if(!session)return;const left=session.answers.filter(a=>a===null).length;if(left&&!window.confirm(`Quedan ${left} preguntas sin responder. Se contarán como no acertadas. ¿Finalizar igualmente?`))return;const rows=session.ids.map((id,i)=>{const q=BANK.find(x=>x.id===id);const answer=session.answers[i];return {q,answer,isCorrect:answer===q.correct}});const correct=rows.filter(x=>x.isCorrect).length,answered=rows.filter(x=>x.answer!==null).length;rows.forEach(x=>{if(x.answer===null)return;const a=saved.attempts[x.q.id]||{asked:0,correct:0,wrong:0,lastWrong:false};a.asked++;if(x.isCorrect){a.correct++;a.lastWrong=false}else{a.wrong++;a.lastWrong=true}saved.attempts[x.q.id]=a});const rec={date:new Date().toISOString(),label:session.label,total:rows.length,correct,wrong:answered-correct,blank:rows.length-answered,duration:Math.max(0,Math.floor((Date.now()-session.started)/1000))};saved.history.unshift(rec);saved.history=saved.history.slice(0,100);store();lastResults={rows,rec};session=null;position=0;storeSession();reviewFilter='wrong';show('results')}
+    function reviewCard(row,i){const actual=row.answer===null?'Sin responder':row.q.options[row.answer];const type=row.answer===null?'blank':row.isCorrect?'':'wrong';return `<article class="review"><div class="review-head"><span class="tag ${type}">${row.answer===null?'En blanco':row.isCorrect?'✓ Correcta':'✕ Incorrecta'}</span><span class="small-muted">${html(getTopic(row.q.topic).title)} · ${i+1}</span></div><h3>${html(row.q.q)}</h3>${row.isCorrect?`<p class="correctline">Tu respuesta: <strong>${html(actual)}</strong></p>`:`${row.answer!==null?`<p class="wrongline">Tu respuesta: ${html(actual)}</p>`:''}<p class="correctline">Respuesta correcta: <strong>${html(row.q.options[0])}</strong></p>`}<p class="explanation"><strong>Explicación:</strong> ${html(row.q.why)}</p></article>`}
+    function results(){if(!lastResults)return `<div class="empty" style="margin-top:35px">No hay un test corregido en esta sesión. Tus notas anteriores están en Progreso.</div>`;const {rows,rec}=lastResults;const filtered=rows.map((x,i)=>({...x,idx:i})).filter(x=>reviewFilter==='all'||!x.isCorrect);return `<section class="quiz-shell"><div class="results-hero"><div class="eyebrow">Test completado</div><h1>${html(rec.label)}</h1><div class="score">${percent(rec.correct,rec.total)}<small>%</small></div><div class="results-grid"><div class="resultmini"><strong style="color:var(--mint)">${rec.correct}</strong><span>Aciertos</span></div><div class="resultmini"><strong style="color:var(--danger)">${rec.wrong}</strong><span>Errores</span></div><div class="resultmini"><strong style="color:var(--amber)">${rec.blank}</strong><span>En blanco</span></div></div><div class="small-muted">${rec.total} preguntas · ${duration(rec.duration)} · Las no respondidas no suman puntos</div></div><div class="toolbar"><button class="button primary" data-action="home">Volver a temas</button><button class="button" data-action="mistakes">Practicar fallos →</button></div><div class="section-head"><div><h2>Corrección explicada</h2><p>Entiende cada error, no memorices solo las letras.</p></div></div><div style="display:flex;gap:8px"><button class="button tiny ${reviewFilter==='wrong'?'primary':''}" data-action="filter" data-filter="wrong">Fallos y blancas (${rows.length-rec.correct})</button><button class="button tiny ${reviewFilter==='all'?'primary':''}" data-action="filter" data-filter="all">Todas (${rows.length})</button></div><div class="review-list">${filtered.length?filtered.map(r=>reviewCard(r,r.idx)).join(''):'<div class="empty">¡Perfecto! No tienes errores en este test.</div>'}</div></section>`}
+    function mistakes(){const wrong=BANK.filter(x=>saved.attempts[x.id]?.lastWrong);const byTopic=T.map(t=>({t,items:wrong.filter(x=>x.topic===t.id)}));return `<div class="section-head"><div><div class="eyebrow">Refuerzo inteligente</div><h2>Mis fallos</h2><p>Preguntas que fallaste en tu último intento; desaparecen cuando las aciertas.</p></div></div><div class="panel"><div class="topline"><div><div class="num" style="font-size:39px;font-weight:850;color:var(--amber)">${wrong.length}</div><div class="small-muted">Preguntas pendientes de dominar</div></div><button class="button primary" data-action="retry" ${!wrong.length?'disabled':''}>Repasar ${Math.min(20,wrong.length)}</button></div>${wrong.length?`<p class="hint" style="margin-top:16px">El repaso toma hasta 20 preguntas falladas al azar, mezclando temas. Puedes repetirlo hasta vaciar la lista.</p>`:'<p class="hint" style="margin-top:16px">Todavía no hay preguntas marcadas como falladas. ¡Empieza un test!</p>'}</div><div class="panel"><strong>Fallos por tema</strong>${byTopic.map(({t,items})=>`<div class="listrow"><div><h3>${html(t.title)} · ${html(t.name)}</h3><p>${items.length} pendientes</p></div>${items.length?`<button class="button tiny" data-action="retrytopic" data-topic="${t.id}">Practicar</button>`:'<span class="tag">Al día</span>'}</div>`).join('')}</div>`}
+    function progress(){const a=stats();return `<div class="section-head"><div><div class="eyebrow">Datos guardados en este dispositivo</div><h2>Mi progreso</h2><p>Sin cuentas, sin publicidad y sin enviar tus resultados a ningún servidor.</p></div></div><div class="stat-grid"><div class="stat"><div class="text">Vistas</div><div class="num">${a.seen}</div></div><div class="stat"><div class="text">Acertadas alguna vez</div><div class="num">${a.mastered}</div></div><div class="stat"><div class="text">Tests</div><div class="num">${a.totalTests}</div></div></div><div class="panel"><h3 style="margin-top:0">Cobertura por tema</h3>${T.map(t=>{const x=topicStats(t.id);return `<div style="padding:12px 0"><div class="topline" style="margin-bottom:9px"><span style="font-weight:650;font-size:13px">${html(t.title)} · ${html(t.name)}</span><span class="small-muted">${x.seen}/${x.total} vistas</span></div>${progressBar(x.seen,x.total)}<div class="small-muted" style="margin-top:5px">${x.mastered} acertadas al menos una vez · ${x.wrong} por repasar</div></div>`}).join('')}</div><div class="panel"><h3 style="margin-top:0">Últimos intentos</h3>${saved.history.length?saved.history.slice(0,12).map(h=>`<div class="listrow"><div><h3>${html(h.label)}</h3><p>${new Date(h.date).toLocaleString('es-ES',{dateStyle:'short',timeStyle:'short'})} · ${h.total} preguntas · ${duration(h.duration)}</p></div><div class="right" style="color:${percent(h.correct,h.total)>=70?'var(--mint)':'var(--amber)'}">${percent(h.correct,h.total)}%</div></div>`).join(''):'<div class="empty" style="margin-top:12px">Tus intentos aparecerán aquí al terminar los tests.</div>'}</div><div class="panel"><h3 style="margin:0 0 7px">Copia de tus resultados</h3><p class="hint">Exporta un archivo JSON por si cambias de teléfono o navegador. También puedes restaurarlo.</p><div class="actions" style="display:flex;gap:9px;flex-wrap:wrap;margin-top:16px"><button class="button" data-action="export">Exportar progreso</button><label class="button file-label" tabindex="0">Importar progreso <input id="importfile" type="file" accept=".json,application/json"></label><button class="button danger" data-action="reset">Borrar estadísticas</button></div></div>`}
+    function info(){return `<div class="section-head"><div><div class="eyebrow">Información de estudio</div><h2>Sobre DISM Test</h2><p>Cómo funciona y qué contenidos se han usado.</p></div></div><div class="panel"><h3>¿Qué incluye?</h3><ul class="info-list"><li><strong>${BANK.length} preguntas</strong> nuevas, con cuatro alternativas y una explicación de la correcta.</li><li><strong>Tests por tema:</strong> de 10, 20 o el banco completo, según las preguntas disponibles.</li><li><strong>Simulacros mixtos:</strong> 25 o 30 preguntas de los seis bloques; se incluye la de OpenAPI.</li><li><strong>Repaso de fallos:</strong> las preguntas que fallas quedan pendientes hasta que las aciertes.</li><li><strong>Cálculos:</strong> conviene resolverlos en papel antes de escoger respuesta, como en el examen anterior.</li></ul></div><div class="panel"><h3>Alcance del temario</h3><p class="hint">El contenido procede del resumen elaborado a partir de los seis PDFs docentes de DISM y una comparación pública de guías publicada por otro estudiante. No disponemos de la guía oficial original del profesor. Se han omitido los apartados considerados excluidos de forma <strong>provisional</strong>.</p><p class="hint">OpenAPI se limita a su definición. No se incluyen ejercicios de Erlang B, generaciones móviles, versiones de Bluetooth ni funcionamiento interno de Flutter/PWA.</p><p class="hint">No se han copiado preguntas de la web de tu compañero. Este banco es una elaboración independiente basada en los conceptos del temario.</p></div><div class="panel"><h3>Uso sin conexión e instalación</h3><ul class="info-list"><li>Para instalar como app, publica la carpeta de la web en un servidor HTTPS (por ejemplo GitHub Pages).</li><li>En Android abre la dirección en Chrome y elige «Instalar aplicación» o «Añadir a pantalla de inicio».</li><li>En iPhone abre la web con Safari, toca Compartir y elige «Añadir a pantalla de inicio».</li><li>Una vez cargados y guardados los archivos de la app, la PWA permite seguir haciendo tests sin conexión.</li><li>Los resultados se guardan únicamente en el navegador de cada dispositivo. No se sincronizan entre móviles.</li></ul></div><div class="callout">Esta herramienta es un apoyo de estudio independiente; no es un producto oficial de la Universidad de Alicante ni una predicción del examen.</div>`}
+    function render(){const app=$('#app');app.innerHTML=screen==='home'?home():screen==='quiz'?quiz():screen==='results'?results():screen==='mistakes'?mistakes():screen==='progress'?progress():info();$('#bottom-nav').classList.toggle('hide',screen==='quiz'||screen==='results')}
+    document.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(!el)return;const act=el.dataset.action;if(act==='home'){if(screen==='quiz'&&session){show('home')}else show('home')}
+      else if(act==='mixed')startQuiz('mixed',Number(el.dataset.count));
+      else if(act==='start')startQuiz(el.dataset.topic,Number(el.dataset.count));
+      else if(act==='resume')show('quiz');
+      else if(act==='answer'){if(!session)return;session.answers[position]=Number(el.dataset.option);storeSession();render()}
+      else if(act==='clear'){if(!session)return;session.answers[position]=null;storeSession();render()}
+      else if(act==='jump'){position=Number(el.dataset.index);storeSession();show('quiz',false)}
+      else if(act==='prev'){position=Math.max(position-1,0);storeSession();show('quiz',false)}
+      else if(act==='next'){if(position===session.ids.length-1)finish();else{position++;storeSession();show('quiz',false)}}
+      else if(act==='abandon'){show('home')}
+      else if(act==='filter'){reviewFilter=el.dataset.filter;render()}
+      else if(act==='mistakes'||act==='progress'||act==='info')show(act);
+      else if(act==='retry'){startQuiz('wrong',Math.min(20,BANK.filter(q=>saved.attempts[q.id]?.lastWrong).length),true)}
+      else if(act==='retrytopic'){const arr=shuffled(BANK.filter(q=>q.topic===el.dataset.topic&&saved.attempts[q.id]?.lastWrong));if(!arr.length)return;if(session&&!confirm('¿Descartar el test pendiente?'))return;session={ids:arr.map(x=>x.id),orders:arr.map(()=>shuffled([0,1,2,3])),answers:Array(arr.length).fill(null),label:`Repaso · ${getTopic(el.dataset.topic).title}`,started:Date.now()};position=0;storeSession();show('quiz')}
+      else if(act==='reset'){if(confirm('¿Borrar todas las estadísticas e historial de tests de este dispositivo? Esta acción no se puede deshacer.')){saved={attempts:{},history:[]};store();show('progress')}}
+      else if(act==='export'){const blob=new Blob([JSON.stringify({app:'dism-test',version:1,exported:new Date().toISOString(),data:saved},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='DISM_Test_progreso.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500)}
+      else if(act==='install'){if(installPrompt){installPrompt.prompt();installPrompt.userChoice.then(()=>{installPrompt=null;$('#install-btn').classList.add('hide')})}else show('info')}
+    });
+    document.addEventListener('change',async e=>{if(e.target.id!=='importfile')return;const f=e.target.files?.[0];if(!f)return;try{const data=JSON.parse(await f.text());if(data.app!=='dism-test'||data.version!==1||!data.data||typeof data.data.attempts!=='object'||!Array.isArray(data.data.history))throw Error('Formato no válido');if(!confirm('¿Importar este progreso y reemplazar tus estadísticas actuales?'))return;saved=data.data;store();show('progress');alert('Progreso importado correctamente.')}catch(err){alert('No se ha podido importar: el archivo no tiene el formato esperado.')}});
+    window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('#install-btn').classList.remove('hide')});
+    window.addEventListener('online',()=>$('#online-label').innerHTML='<span class="status-dot"></span>Disponible sin conexión*');
+    window.addEventListener('offline',()=>$('#online-label').innerHTML='<span class="status-dot"></span>Sin conexión');
+    if('serviceWorker' in navigator&&(location.protocol==='https:'||['localhost','127.0.0.1'].includes(location.hostname)))window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+    render();
+  })();
+  </script>
+</body>
+</html>
